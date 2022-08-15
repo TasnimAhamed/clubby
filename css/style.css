@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+/*
+font-family: 'Source Sans Pro', sans-serif;
+*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --blue:#0070B2;
+    --secondary-black:#1B1B1B;
+    --secondary-color: #3F4354;
+    --secondary-2:#F7F7F7;
+    --secondary-3:#97989D;
+    --secondary-6:#F4F6F8;
+}
+
+/* ================================================== */
+
+/*  Common CSS	*/
+
+/* ================================================== */
+
+p{
+    margin-bottom: 0;
+}
+
+
+
+
+/* ================================================== */
+
+/*  Page - Login CSS	*/
+
+/* ================================================== */
+
+
+.login--row-left-wrapper{
+    background: linear-gradient(146.39deg, #0070B2 -0.65%, #0079B6 13.32%, #0092C3 36.57%, #00A3CB 84.07%);
+    padding: 180px 130px;
+}
+.login--row-left-content{
+    width: 100%;
+    max-width: 442px;
+}
+.login--row-left-content h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+.login--row-left-content .login--content-box:not(:last-child){
+    margin-bottom: 20px;
+}
+.login--content-box{
+    display:flex;
+    align-items: center;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 29px 20px;
+}
+.login--content-box-img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.login--content-box-text p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-color);
+}
+
+.login--row-right-wrapper{
+    background:var(--white);
+    padding:114px 160px 74px 160px;
+}
+.login--row-right-content{
+    width: 100%;
+    max-width: 420px;
+}
+.login--row-right-content .clubby--logo{
+    margin-bottom: 70px;
+}
+.form--title{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color:var(--secondary-black);
+    margin-bottom: 29px;
+}
+.login--form .form-group{
+    margin-bottom: 20px;
+}
+.login--form .form-group label{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.login--form .form-group input{
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    background: var(--secondary-6);
+    border-radius: 8px;
+    padding: 13px 20px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-3);
+}
+.login--form-submit{
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    width: 100%;
+    max-width: 420px;
+    height: 46px;
+    background: var(--blue);
+    border-radius: 8px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-2);
+    padding: 10px 12px;
+    margin-bottom: 20px;
+}
+.login--form-submit:hover{
+    background: var(--blue);
+    color: var(--secondary-2);
+}
+.switch--login span,
+.switch--login a{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+.switch--login a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.or--wrapper{
+    margin: 29px 0;
+    text-align: center;
+    position: relative;
+}
+.or--wrapper::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #C5D0E6;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.or--wrapper span{
+    position: relative;
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    background: var(--white);
+    color: var(--secondary-color);
+    padding: 8px 20px;
+    z-index: 2;
+}
+.google--login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    width: 100%;
+    max-width: 420px;
+    height: 46px;
+    background: var(--secondary-6);
+    border-radius: 8px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    padding: 13px 20px;
+}
+.google--login img{
+    margin-right: 10px;
+}
+
+.google--login:hover{
+    background: var(--secondary-6);
+    color: var(--secondary-color);
+}

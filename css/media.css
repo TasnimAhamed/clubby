@@ -1,0 +1,121 @@
+@media (min-width:320px) and (max-width:767px){
+    
+    /* ================================================== */
+
+    /*  Page - Login CSS	*/
+
+    /* ================================================== */
+
+    .login--row{
+        flex-direction: column-reverse;
+    }
+    .login--row-right-wrapper{
+        padding: 34px 20px 24px 20px;
+    }
+    .login--row-right-content .clubby--logo{
+        margin-bottom: 38px;
+    }
+    .form--title{
+        margin-bottom: 20px;
+    }
+    .or--wrapper{
+        margin: 20px 0;
+    }
+
+    .login--row-left-wrapper{
+        padding: 20px;
+    }
+    .login--row-left-content h2{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+    /* ================================================== */
+
+    /*  Page - Login CSS	*/
+
+    /* ================================================== */
+
+    .login--row{
+        flex-direction: column-reverse;
+    }
+    .login--row-right-wrapper{
+        padding: 64px 40px 48px 40px;
+    }
+    .login--row-right-content .clubby--logo{
+        margin-bottom: 40px;
+    }
+    .or--wrapper{
+        margin: 24px 0;
+    }
+
+    .login--row-left-wrapper{
+        padding: 40px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px){
+
+    /* ================================================== */
+
+    /*  Page - Login CSS	*/
+
+    /* ================================================== */
+
+    .login--row-left-wrapper{
+        padding: 108px 24px;
+    }
+    .login--row-right-wrapper{
+        padding:64px 24px;
+    }
+    .login--row-right-content .clubby--logo{
+        margin-bottom: 40px;
+    }
+    .form--title {
+        margin-bottom: 24px;
+    }
+
+}
+
+
+@media (min-width:1200px) and (max-width:1399px){
+
+    /* ================================================== */
+
+    /*  Page - Login CSS	*/
+
+    /* ================================================== */
+
+    .login--row-left-wrapper{
+        padding: 116px 32px;
+    }
+
+    .login--row-right-wrapper{
+        padding:96px 32px 72px 32px;
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:1599px){
+
+    /* ================================================== */
+
+    /*  Page - Login CSS	*/
+
+    /* ================================================== */
+
+    /* .login--row-left-wrapper{
+        padding: 116px 32px;
+    } */
+
+    .login--row-right-wrapper{
+        padding:114px 136px 74px 136px;
+    }
+
+}
