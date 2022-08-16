@@ -179,10 +179,129 @@
 
 
     <!-- Main Section Start -->
-    <main class="body--main-area">
-        
+
+    <main class="main--content">
+        <div class="left--area-content">
+            <div class="join--club-btn-wrapper">
+                <button class="btn join--club-btn" data-bs-toggle="modal" data-bs-target="#joinClub">
+                    <img src="./img/join--club.png" alt="clubby">
+                    <span>Join Club</span>
+                </button>
+            </div>
+            <div class="create--club-btn-wrapper">
+                <a class="btn create--club-btn" href="./create-club.html">
+                    <img src="./img/plus.png" alt="clubby">
+                    <span>Create Club</span>
+                </a>
+            </div>
+
+            <div class="your--club--wrapper">
+                <div class="accordion your--club-accordion" id="yourClubAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#yourClub" aria-expanded="true" aria-controls="collapseOne">
+                                <span>Your Club</span>
+                                <img src="./img/your--club-arrow.svg" alt="clubby">
+                            </button>
+                        </h2>
+                        <div id="yourClub" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#yourClubAccordion">
+                            <div class="accordion-body">
+                                <div class="club-list">
+                                    <a href="#" class="club--list-item">
+                                        <div class="your--club-img">
+                                            <img src="./img/your--club-avatar-1.png" alt="clubby">
+                                        </div>
+                                        <div class="your--club-details">
+                                            <h3>Cat Lover Club</h3>
+                                            <p>Shots featured today by cu..</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="club--list-item active">
+                                        <div class="your--club-img">
+                                            <img src="./img/your--club-avatar-2.png" alt="clubby">
+                                        </div>
+                                        <div class="your--club-details">
+                                            <h3>Business Club</h3>
+                                            <p>Find the latest update</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="club--list-item">
+                                        <div class="your--club-img">
+                                            <img src="./img/your--club-avatar-3.png" alt="clubby">
+                                        </div>
+                                        <div class="your--club-details">
+                                            <h3>Music RnB Club</h3>
+                                            <p>Find the latest update</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="club--list-item">
+                                        <div class="your--club-img">
+                                            <img src="./img/your--club-avatar-4.png" alt="clubby">
+                                        </div>
+                                        <div class="your--club-details">
+                                            <h3>Riders Club</h3>
+                                            <p>Explore from your favorite p..</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle--area-content">
+            dfjhdhjfh
+        </div>
+        <div class="right--area-content">
+            dfjhdhjfh
+        </div>
     </main>
+
     <!-- Main Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal Content Here -->
+
+        <!-- Join Club Modal -->
+        
+        <div class="modal fade join--club-modal" id="joinClub" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Join Club</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Club Code</h3>
+                        <input type="text" class="form-control club--code" placeholder="282b223">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn join--club-submit">Join</button>
+                        <button type="button" class="btn join--club-cancel" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Club Modal -->
+
+
+    <!-- Modal Content Here -->
 
 
 
