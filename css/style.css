@@ -239,7 +239,7 @@ p{
 
 .header--section{
     background:var(--white);
-    padding:22px 40px;
+    padding:20px 40px;
 }
 .header--section-nav{
     display:flex;
