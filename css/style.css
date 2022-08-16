@@ -295,6 +295,7 @@ p{
     min-width: 590px;
     box-shadow: 0 16px 100px -20px #97989D;
     transform: translate(150px, 60px)!important;
+    padding-top: 0;
     padding-bottom: 20px;
 }
 .notification--and--profile .nav li.notification .dropdown-menu::after{
@@ -483,5 +484,5 @@ p{
 .body--main-area{
     background:#F7F7F7;
     width: 100%;
-    height:400px;
+    height:2400px;
 }

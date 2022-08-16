@@ -31,6 +31,92 @@
         margin-bottom: 32px;
     }
 
+
+    /* ================================================== */
+
+    /*  Header Section CSS	*/
+
+    /* ================================================== */
+
+    .header--section{
+        padding:20px 16px;
+    }
+    .logo--and--menu .nav-brand.logo{
+        margin-right: 32px;
+    }
+
+    .main--menu{
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background:#ffffff;
+        padding: 20px 24px;
+        border-top: 1px solid #E5E5E5;
+        z-index: 99999;
+    }
+    .main--menu .nav{
+        justify-content:center;
+    }
+    .main--menu .nav .nav-item:not(:last-child) {
+        margin-right: 48px;
+    }
+
+
+    .notification--and--profile .nav li.notification .dropdown-menu{
+        transform: translate3d(-238px, 60px, 0px)!important;
+        width: 100%;
+        min-width: 344px;
+        padding-bottom: 16px;
+    }
+    .notification--and--profile .nav li.notification .dropdown-menu::after{
+        right:22%;
+    }
+    .notification--and--profile .nav li.notification .notification--header{
+        padding: 20px 16px;
+    }
+    .notification--and--profile .nav li.notification .single--notification{
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .notification--and--profile .nav > li:not(:last-child) {
+        margin-right: 22px;
+    }
+    .notification--and--profile .nav li.profile > a{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .notification--and--profile .nav li.profile > a::after{
+        display: none;
+    }
+    .notification--and--profile .nav li.notification .notification--header .mark--all-as-read{
+        font-size:15px;
+    }
+    .notification--and--profile .nav li.notification .notification--header .mark--all-as-read svg{
+        margin-right: 6px;
+        width:15px;
+    }
+    .profile--name{
+        display: none;
+    }
+    .profile--img{
+        margin-right: 0;
+    }
+    .notification--and--profile .nav li.profile .dropdown-menu {
+        max-width: 180px;
+        padding: 10px 12px;
+        box-shadow:0 10px 100px -10px #97989d;
+    }
+    .notification--and--profile .nav li.profile .dropdown-menu::after{
+        left: 86%;
+    }
+    .notification--and--profile .nav li.profile .dropdown-menu li a img{
+        margin-right: 10px;
+    }
+
+
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -58,6 +144,91 @@
         padding: 40px;
     }
 
+
+    /* ================================================== */
+
+    /*  Header Section CSS	*/
+
+    /* ================================================== */
+    
+    .header--section{
+        padding:20px 16px;
+    }
+    .logo--and--menu .nav-brand.logo{
+        margin-right: 32px;
+    }
+
+    .main--menu{
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background:#ffffff;
+        padding: 20px 24px;
+        border-top: 1px solid #E5E5E5;
+        z-index: 99999;
+    }
+    .main--menu .nav{
+        justify-content:center;
+    }
+    .main--menu .nav .nav-item:not(:last-child) {
+        margin-right: 48px;
+    }
+    .notification--and--profile .nav li.notification .dropdown-menu{
+        transform: translate3d(50px, 60px, 0px)!important;
+        width: 100%;
+        min-width: 490px;
+        padding-bottom: 16px;
+    }
+    .notification--and--profile .nav li.notification .dropdown-menu::after{
+        right:12%;
+    }
+    .notification--and--profile .nav li.notification .notification--header{
+        padding: 20px 16px;
+    }
+    .notification--and--profile .nav li.notification .single--notification{
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .notification--and--profile .nav > li:not(:last-child) {
+        margin-right: 22px;
+    }
+    .notification--and--profile .nav li.profile > a{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .notification--and--profile .nav li.profile > a::after{
+        display: none;
+    }
+    .notification--and--profile .nav li.notification .notification--header .mark--all-as-read{
+        font-size:15px;
+    }
+    .notification--and--profile .nav li.notification .notification--header .mark--all-as-read svg{
+        margin-right: 6px;
+        width:15px;
+    }
+    .profile--name{
+        display: none;
+    }
+    .profile--img{
+        margin-right: 0;
+    }
+    .notification--and--profile .nav li.profile .dropdown-menu {
+        max-width: 180px;
+        padding: 10px 12px;
+        box-shadow:0 10px 100px -10px #97989d;
+    }
+    .notification--and--profile .nav li.profile .dropdown-menu::after{
+        left: 86%;
+    }
+    .notification--and--profile .nav li.profile .dropdown-menu li a img{
+        margin-right: 10px;
+    }
+
+
+
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -79,6 +250,17 @@
     }
     .form--title {
         margin-bottom: 24px;
+    }
+
+
+    /* ================================================== */
+
+    /*  Header Section CSS	*/
+
+    /* ================================================== */
+
+    .logo--and--menu .nav-brand.logo {
+        margin-right: 72px;
     }
 
 }
