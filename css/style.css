@@ -17,6 +17,7 @@ html{
     --white:#ffffff;
     --black:#000000;
     --blue:#0070B2;
+    --red:#E94343;
     --gradient: linear-gradient(146.39deg, #0070B2 -0.65%, #0079B6 13.32%, #0092C3 36.57%, #00A3CB 84.07%);
     --secondary-black:#1B1B1B;
     --secondary-color: #3F4354;
@@ -25,6 +26,7 @@ html{
     --secondary-3:#97989D;
     --secondary-4:#858EAD;
     --secondary-6:#F4F6F8;
+    --gray-11:#1F1F1F;
     --gray-3:#F7F7F7;
     --gray-4:#F0F0F0;
 }
@@ -564,9 +566,10 @@ p{
 
 .join--club-modal .modal-content{
     border: 0;
-    width: 520px;
-    height: 297px;
     padding: 30px;
+}
+.join--club-modal .modal-dialog{
+    max-width: 520px;
 }
 
 .join--club-modal .modal-content .modal-header{
@@ -859,5 +862,236 @@ p{
     line-height: 24px;
     color: var(--secondary-color);
     margin-top: 0;
+    margin-bottom: 0;
+}
+.member--list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.member--list .member--list-item{
+    max-width: 20%;
+    flex-basis: 20%;
+    margin-top: 20px;
+}
+.member--list .member--list-item img{
+    width: 40px;
+    height:40px;
+}
+.show--all-members{
+    position: relative;
+    cursor: pointer;
+}
+.show--all-members span{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #192126;
+    opacity: 0.75;
+    border-radius: 50%;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+
+/* Show All members Modal */
+
+.show--all-members-modal .modal-content{
+    border:0;
+    padding: 30px;
+}
+.show--all-members-modal .modal-dialog{
+    max-width:520px;
+}
+.show--all-members-modal .modal-content .modal-header{
+    padding:0;
+    border-bottom: 1px solid var(--gray-4);
+}
+.show--all-members-modal .modal-content .modal-header h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+}
+.show--all-members-modal .modal-content .modal-body{
+    padding:24px 0;
+}
+.show--all-members-modal .modal-content .modal-body .member--search-box{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    width:100%;
+    background: var(--secondary-6);
+    border-radius: 8px;
+    padding:13px 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-black);
+    margin-bottom: 24px;
+}
+.modal--member-list {
+    height:430px;
+    padding-right: 16px;
+    overflow-y: scroll;
+}
+
+/* width */
+.modal--member-list::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 4px;
+}
+  /* Track */
+.modal--member-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+  /* Handle */
+.modal--member-list::-webkit-scrollbar-thumb {
+    background: var(--gray-11);
+    border-radius: 4px;
+}
+.modal--officers-list{
     margin-bottom: 19px;
 }
+.modal--officers-list > h2,
+.modal--members-list > h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.modal--officers-list-item,
+.modal--members-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal--officers-list .modal--officers-list-item:not(:last-child),
+.modal--members-list .modal--members-list-item:not(:last-child){
+    margin-bottom: 10px;
+}
+.modal--officers-list-content,
+.modal--members-list-content {
+    display:flex;
+    align-items: center;
+}
+.modal--officers-list-content .modal--officers--list-img,
+.modal--members-list-content .modal--members--list-img{
+    margin-right: 10px;
+}
+.modal--officers-list-content .modal--officers--list-img img,
+.modal--members-list-content .modal--members--list-img img{
+    width:40px;
+    height: 40px;
+}
+.modal--officers-list-content .modal--officers--list-text h3,
+.modal--members-list-content .modal--members--list-text h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.modal--officers-list-content .modal--officers--list-text p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--secondary-3);
+}
+.modal--members-list-options{
+    display: flex;
+    align-items: center;
+}
+.modal--members-list-options button.add--member-btn{
+    margin-right: 11px;
+}
+.modal--officers-list-options .dropdown button,
+.modal--members-list-options button.add--member-btn,
+.modal--members-list-options .dropdown button{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    padding:0;
+}
+.modal--officers-list-options .dropdown button::after,
+.modal--members-list-options .dropdown button::after{
+    display: none;
+}
+.modal--officers-list-options .dropdown .dropdown-menu,
+.modal--members-list-options .dropdown .dropdown-menu{
+    padding:20px 16px;
+    min-width: 242px;
+    border:0;
+    transform: translate(-140px, 32px)!important;
+    position: relative;
+    box-shadow: 0 16px 100px -20px #97989d;
+}
+.modal--officers-list-options .dropdown .dropdown-menu::after,
+.modal--members-list-options .dropdown .dropdown-menu::after{
+    position: absolute;
+    top: -10px;
+    right: 31%;
+    margin-left: -10px;
+    content: "";
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--white);
+}
+.modal--officers-list-options .dropdown .dropdown-menu li:not(:last-child),
+.modal--members-list-options .dropdown .dropdown-menu li:not(:last-child){
+    margin-bottom: 12px;
+}
+.modal--officers-list-options .dropdown .dropdown-menu li a,
+.modal--members-list-options .dropdown .dropdown-menu li a{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0;
+}
+.modal--officers-list-options .dropdown .dropdown-menu li a:hover,
+.modal--members-list-options .dropdown .dropdown-menu li a:hover{
+    background: var(--white);
+}
+.modal--officers-list-options .dropdown .dropdown-menu li a.kick--member,
+.modal--members-list-options .dropdown .dropdown-menu li a.kick--member{
+    color: var(--red);
+}
+.modal--officers-list-options .dropdown .dropdown-menu li a img,
+.modal--members-list-options .dropdown .dropdown-menu li a img{
+    margin-right: 14px;
+}
+/* Show All members Modal */
