@@ -1088,7 +1088,7 @@ p{
 .upcomming--event-list{
     background: #FFFFFF;
     border-radius: 16px;
-    padding: 20px;
+    padding: 20px 10px 20px 20px;
     margin-bottom: 20px;
 }
 .upcomming--event-list h2.upcoming--event-title{
