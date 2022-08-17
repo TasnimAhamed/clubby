@@ -521,7 +521,6 @@ p{
 .right--area-content{
     max-width:23.75%;
     flex-basis:23.75%;
-    background-color: green;
 }
 
 
@@ -530,6 +529,8 @@ p{
 /*  Left Area Content CSS	*/
 
 /* ================================================== */
+
+
 .join--club-btn-wrapper{
     margin-bottom: 16px;
 }
@@ -689,6 +690,7 @@ p{
     background: var(--white);
     border: 0;
     padding:16px;
+    border-radius: 12px;
 }
 .your--club-accordion .accordion-header{
     font-size: 16px;
@@ -708,6 +710,13 @@ p{
     line-height: 24px;
     color: var(--secondary-color);
     padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+.your--club-accordion .accordion-button img{
+    transition: all 0.3s ease-in-out;
+}
+.your--club-accordion .accordion-button.collapsed img{
+    transform:rotate(180deg);
 }
 .your--club-accordion .accordion-button::after{
     display: none;
@@ -755,4 +764,100 @@ p{
     font-size: 10px;
     line-height: 14px;
     color: var(--secondary-3);
+}
+
+
+/* ================================================== */
+
+/*  Right Area Content CSS	*/
+
+/* ================================================== */
+
+.about--content{
+    padding:20px;
+    margin-bottom: 20px;
+    background: var(--white);
+    border-radius: 16px;
+}
+.about--content h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.about--content p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+
+.all--member-list{
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.officers{
+    margin-bottom: 16px;
+}
+.officers h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+.officers--list .officers--list-item{
+    display: inline-flex;
+    align-items:flex-start;
+    width:100%;
+}
+.officers--list .officers--list-item:not(:last-child){
+    margin-bottom: 13px;
+}
+.officers--list .officers--list-item .officers--list-item-img{
+    margin-right: 10px;
+}
+.officers--list .officers--list-item .officers--list-item-img img{
+    width: 30px;
+    height:30px;
+}
+.officers--list .officers--list-item .officers--list-item-text h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.officers--list .officers--list-item .officers--list-item-text p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--secondary-3);
+}
+
+.members h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 19px;
 }
