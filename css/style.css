@@ -488,7 +488,9 @@ p{
 .notification--and--profile .nav li.profile .dropdown-menu li a img{
     margin-right: 14px;
 }
-.notification--and--profile .nav li.profile .dropdown-menu li:hover a{
+.notification--and--profile .nav li.profile .dropdown-menu li:hover a,
+.notification--and--profile .nav li.profile .dropdown-menu li:focus a,
+.notification--and--profile .nav li.profile .dropdown-menu li a:focus{
     background: var(--white);
 }
 
@@ -950,24 +952,9 @@ p{
 }
 .modal--member-list {
     height:430px;
-    padding-right: 16px;
-    overflow-y: scroll;
+    padding-right: 26px;
 }
 
-/* width */
-.modal--member-list::-webkit-scrollbar {
-    width: 7px;
-    border-radius: 4px;
-}
-  /* Track */
-.modal--member-list::-webkit-scrollbar-track {
-    background: transparent;
-}
-  /* Handle */
-.modal--member-list::-webkit-scrollbar-thumb {
-    background: var(--gray-11);
-    border-radius: 4px;
-}
 .modal--officers-list{
     margin-bottom: 19px;
 }
@@ -1050,7 +1037,6 @@ p{
     min-width: 242px;
     border:0;
     transform: translate(-140px, 32px)!important;
-    position: relative;
     box-shadow: 0 16px 100px -20px #97989d;
 }
 .modal--officers-list-options .dropdown .dropdown-menu::after,
@@ -1094,4 +1080,100 @@ p{
 .modal--members-list-options .dropdown .dropdown-menu li a img{
     margin-right: 14px;
 }
+
 /* Show All members Modal */
+
+/* Upcoming Event List */
+
+.upcomming--event-list{
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.upcomming--event-list h2.upcoming--event-title{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.upcomming--event-list .upcoming--event-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.upcoming--event-item{
+    display: flex;
+}
+.upcoming--event-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    width: 46px;
+    height: 68px;
+    background: #E8E9EA;
+    border: 1px solid #192126;
+    box-shadow: 0px 6px 6px 2px rgba(71, 153, 235, 0.04);
+    border-radius: 6px;
+}
+.upcoming--event-date{
+    margin-right: 14px;
+}
+.upcoming--event-date h4{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.upcoming--event-date h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 22px;
+    text-align: center;
+    color: #192126;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.upcoming--event-content h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.upcoming--event-content h2 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.upcoming--event-content p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--secondary-3);
+}
+.upcoming--event-content span{
+    margin-top: 10px;
+    display: inline-block;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    color: #192126; 
+}
+/* Upcoming Event List */
