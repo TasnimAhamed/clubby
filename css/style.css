@@ -1463,7 +1463,8 @@ p{
 .club--edit-btn img{
     margin-right: 8px;
 }
-.club--edit-btn:hover{
+.club--edit-btn:hover,
+.club--edit-btn:focus{
     background:var(--white);
 }
 
@@ -2021,11 +2022,11 @@ p{
 .club--settings-modal .modal-body{
     padding:16px 0;
 }
-.club--settings-modal .modal-body .club--icon-modal{
+.club--icon-modal{
     text-align: center;
     margin-bottom: 16px;
 }
-.club--settings-modal .club--icon-modal h4{
+.club--icon-modal h4{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
@@ -2035,16 +2036,16 @@ p{
     margin-top: 0;
     margin-bottom: 10px;
 }
-.club--settings-modal .choose--club-icon-wrapper{
+.choose--club-icon-wrapper{
     width:fit-content;
     display: inline-flex;
     position: relative;
 }
-.club--settings-modal .choose--club-icon-wrapper > img {
+.choose--club-icon-wrapper > img {
     width: 130px;
     height: 130px;
 }
-.club--settings-modal .choose--club-icon{
+.choose--club-icon{
     border: 0;
     padding:0;
     box-shadow: none;
@@ -2053,13 +2054,13 @@ p{
     right:-16px;
     bottom:-16px;
 }
-.club--settings-modal .edit--club-name,
-.club--settings-modal .edit--club-description{
+.edit--club-name,
+.edit--club-description{
     margin-bottom: 16px;
 }
-.club--settings-modal .edit--club-name label,
-.club--settings-modal .edit--club-description label,
-.club--settings-modal .choose--club-color h3{
+.edit--club-name label,
+.edit--club-description label,
+.choose--club-color h3{
     font-family: 'Source Sans Pro',sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -2068,8 +2069,8 @@ p{
     color: var(--secondary-color);
     margin-bottom: 10px;
 }
-.club--settings-modal .edit--club-name input,
-.club--settings-modal .edit--club-description textarea{
+.edit--club-name input,
+.edit--club-description textarea{
     border: 0;
     outline: 0;
     background:var(--secondary-6);
@@ -2083,12 +2084,12 @@ p{
     line-height: 22px;
     color: var(--secondary-black);
 }
-.club--settings-modal .edit--club-description textarea{
+.edit--club-description textarea{
     resize: none;
     height: 140px;
 }
-.club--settings-modal .edit--club-name input:focus,
-.club--settings-modal .edit--club-description textarea:focus{
+.edit--club-name input:focus,
+.edit--club-description textarea:focus{
     box-shadow:none;
 }
 .club--colors-wrapper{
@@ -2140,13 +2141,13 @@ p{
 .club--colors-wrapper .form-group label.red{
     background: var(--red);
 }
-.club--settings-modal .show--budget-all-members{
+.show--budget-all-members{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.club--settings-modal .show--budget-all-members h5{
+.show--budget-all-members h5{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
