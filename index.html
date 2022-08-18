@@ -181,6 +181,8 @@
     <!-- Main Section Start -->
 
     <main class="main--content">
+
+
         <div class="left--area-content">
 
             <!-- Join Club-->
@@ -259,6 +261,8 @@
             </div>
 
         </div>
+
+
         <div class="middle--area-content">
             
             <!-- Club Profile View -->
@@ -281,7 +285,7 @@
                             <img src="./img/leave--club.png" alt="clubby">
                             <span>Leave</span>
                         </button>
-                        <button class="btn club--edit-btn">
+                        <button class="btn club--edit-btn" data-bs-toggle="modal" data-bs-target="#clubSettingsModal">
                             <img src="./img/edit--club.png" alt="clubby">
                             <span>Edit Club</span>
                         </button>
@@ -658,14 +662,13 @@
                     </div>
                 </div>
 
-
-
             </div>
 
             <!-- All Posts Wrapper -->
 
-
         </div>
+
+
         <div class="right--area-content">
 
             <!-- About Content -->
@@ -881,6 +884,8 @@
             </div>
 
         </div>
+
+
     </main>
 
     <!-- Main Section End -->
@@ -1301,6 +1306,139 @@
         </div>
         
         <!-- Show All Members Modal -->
+
+
+        <!-- Club Settings Edit -->
+
+
+        <div class="modal fade club--settings-modal" id="clubSettingsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Club Settings</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="club--icon-modal">
+                            <h4>Club Icon</h4>
+                            <div class="choose--club-icon-wrapper">
+                                <img src="./img/club--img.png" alt="clubby">
+                                <buton class="btn choose--club-icon">
+                                    <img src="./img/notification.png" alt="clubby">
+                                </buton>
+                            </div>
+                        </div>
+                        <div class="edit--club-name">
+                            <label for="edit-club-name">Club Name</label>
+                            <input type="text" name="edit-club-name" id="edit-club-name" class="form-control" placeholder="Cat lover club">
+                        </div>
+                        <div class="edit--club-description">
+                            <label for="edit-club-description">Club Description</label>
+                            <textarea 
+                                class="form-control"
+                                name="edit-club-description" id="edit-club-description"
+                                placeholder="A house for cat lover all over the world. Download thousands of free & premium web design, illustration, bootstrap template, flutter app, icon, 3d illustration, and graphic assets for your UI, UX design project"
+                            ></textarea>
+                        </div>
+                        <div class="choose--club-color">
+                            <h3>Club Color</h3>
+                            <form class="club--colors-wrapper" action="#">
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="black" value="black"
+                                        class="form-check-input"
+                                    >
+                                    <label for="black" class="black"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="pink" value="pink"
+                                        class="form-check-input"
+                                        checked
+                                    >
+                                    <label for="pink" class="pink"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="purple" value="purple"
+                                        class="form-check-input"
+                                    >
+                                    <label for="purple" class="purple"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="orange" value="orange"
+                                        class="form-check-input"
+                                    >
+                                    <label for="orange" class="orange"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="blue" value="blue"
+                                        class="form-check-input"
+                                    >
+                                    <label for="blue" class="blue"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="light-blue" value="light-blue"
+                                        class="form-check-input"
+                                    >
+                                    <label for="light-blue" class="light-blue"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="yellow" value="yellow"
+                                        class="form-check-input"
+                                    >
+                                    <label for="yellow" class="yellow"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="green" value="green"
+                                        class="form-check-input"
+                                    >
+                                    <label for="green" class="green"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="radio" name="club-color" 
+                                        id="red" value="red"
+                                        class="form-check-input"
+                                    >
+                                    <label for="red" class="red"></label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="show--budget-all-members">
+                            <h5>Show budget to all members</h5>
+                            <div class="budget--toogler-show">
+                                <input type="checkbox" class="show--budget-toggler" id="show--budget">
+                                <label for="show--budget" class="show--budget-toggler-btn"></label>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn club--settings-save">Save Changes</button>
+                        <button type="button" class="btn club--settings-cancel" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Club Settings Edit -->
+
 
 
     <!-- Modal Content Here -->
