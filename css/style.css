@@ -1657,6 +1657,12 @@ p{
 .post--react-btn:hover{
     background: var(--secondary-6);
 }
+.post--react-btn.active{
+    background:var(--gray-4);
+}
+.post--react-btn.active svg path{
+    fill: #192126;
+}
 
 .post--comment-box{
     padding-right: 80px;
@@ -1732,6 +1738,10 @@ p{
     background: var(--secondary-6);
     border-radius: 8px;
     padding:16px;
+}
+.all--comments.no--comments{
+    padding: 0;
+    border-bottom: 1px solid #F5F5F5;
 }
 
 .single--comment{
@@ -1867,5 +1877,73 @@ p{
 .show--all-comment:focus{
     color: var(--blue);
 }
+
+/* Make Comment Box */
+
+.make--comment-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 16px 0;
+}
+
+.make--comment-img{
+    margin-right: 20px;
+}
+.make--comment-img img{
+    width:40px;
+    height: 40px;
+}
+.make--comment-input-box{
+    width: 100%;
+    margin-right: 20px;
+}
+.make--comment-input-box input{
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    background: var(--secondary-6);
+    border-radius: 6px;
+    padding: 12px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-4);
+}
+.make--comment-input-box input:focus{
+    box-shadow:none;
+    background: var(--secondary-6);
+}
+.comment--send-btn{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 67px;
+    height: 44px;
+    background: #192126;
+    border-radius: 6px;
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white);
+}
+.comment--send-btn:hover,
+.comment--send-btn:focus{
+    background: #192126;
+    color: var(--white);
+}
+/* Make Comment Box */
 
 /* All Post wrapper */
