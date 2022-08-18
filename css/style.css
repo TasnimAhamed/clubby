@@ -1468,7 +1468,6 @@ p{
     background:var(--white);
 }
 
-
 /* Post Announcements */
 
 .post--announcement-wrapper{
@@ -2090,6 +2089,7 @@ p{
 }
 .edit--club-name input:focus,
 .edit--club-description textarea:focus{
+    background:var(--secondary-6);
     box-shadow:none;
 }
 .club--colors-wrapper{
