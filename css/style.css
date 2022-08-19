@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 /*
+font-family: 'Lato', sans-serif;
 font-family: 'Manrope', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
@@ -2545,4 +2546,145 @@ p{
     font-size: 13px;
     line-height: 22px;
     color: var(--secondary-3);
+}
+
+.change--password-wrapper{
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.change--password-wrapper h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--secondary-black);
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 23px;
+    border-bottom: 1px solid var(--gray-4);
+}
+.password--input{
+    margin-bottom: 24px;
+}
+.password--input label{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.password--input input{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    width:100%;
+    background: var(--secondary-6);
+    border-radius: 8px;
+    padding: 13px 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-black);
+}
+.password--input input:hover,
+.password--input input:focus{
+    background: var(--secondary-6);
+}
+.notifications--setttings-wrapper{
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.notifications--setttings-wrapper h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--secondary-black);
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 23px;
+    border-bottom: 1px solid var(--gray-4);
+}
+
+.notification--content{
+    width: 100%;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.notification--content h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 8px;
+}
+
+/* Notifications Switch */
+.notification--switch input{
+    display: none;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.notification--switch label{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.notification--switch label::after{
+    content: "";
+    position: absolute;
+    width:92px;
+    height:40px;
+    background: rgba(0, 112, 178, 0.1);
+    border: 1px solid #ECECF2;
+    border-radius: 8px;
+    top: 0;
+    left:0;
+    transition: all 0.3s ease-in-out;
+}
+.notification--switch input:checked + label::after{
+    transform: translateX(0);
+}
+.notification--switch input:checked + label span.pill-button-selection-on{
+    color:var(--blue);
+}
+.notification--switch input:checked + label span.pill-button-selection-off{
+    color: #8181A5;
+}
+.notification--switch input + label::after{
+    transform: translateX(96px);
+}
+.notification--switch input + label span.pill-button-selection-on{
+    color: #8181A5;
+}
+.notification--switch input + label span.pill-button-selection-off{
+    color:var(--blue);
+}
+
+.notification--switch label span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:92px;
+    height:40px;
+    border-radius: 8px;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }

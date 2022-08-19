@@ -163,7 +163,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="./settings.html">
                                     <img src="./img/settings.png" alt="clubby">
                                     <span>Settings</span>
                                 </a>
@@ -302,8 +302,68 @@
                     </div>
 
                 </div>
-                <div class="tab-pane fade" id="change-password-tab-panel" role="tabpanel" aria-labelledby="changePassword" tabindex="0">tab2</div>
-                <div class="tab-pane fade" id="notification-settings-tab-panel" role="tabpanel" aria-labelledby="notificationSettings" tabindex="0">tab3</div>
+                <div class="tab-pane fade" id="change-password-tab-panel" role="tabpanel" aria-labelledby="changePassword" tabindex="0">
+
+                    <div class="change--password-wrapper">
+                        <h2>Change Password</h2>
+                        <div class="password--input">
+                            <label for="current-password">Current Password</label>
+                            <input type="password" placeholder="**********" id="current-password" name="current-password">
+                        </div>
+                        <div class="password--input">
+                            <label for="new-password">New Password</label>
+                            <input type="password" placeholder="**********" id="new-password" name="new-password">
+                        </div>
+                        <div class="password--input">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" placeholder="**********" id="confirm-password" name="confirm-password">
+                        </div>
+                        <div class="create--club-btn-wrapper">
+                            <button type="button" class="btn club--settings-save">Save Changes</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="notification-settings-tab-panel" role="tabpanel" aria-labelledby="notificationSettings" tabindex="0">
+
+                    <div class="notifications--setttings-wrapper">
+                        <h2>Notifications Settings</h2>
+                        <div class="notification--content">
+                            <h3>Email Notifications</h3>
+                            <div class="notification--switch">
+                                <input type="checkbox" class="pill-button-input" checked="checked" id="email-notification" checked>
+                                <label for="email-notification">
+                                    <span class="pill-button-selection-on">ON</span>
+                                    <span class="pill-button-selection-off">OFF</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="notification--content">
+                            <h3>SMS Notifications</h3>
+                            <div class="notification--switch">
+                                <input type="checkbox" class="pill-button-input" checked="checked" id="sms-notification" checked>
+                                <label for="sms-notification">
+                                    <span class="pill-button-selection-on">ON</span>
+                                    <span class="pill-button-selection-off">OFF</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="notification--content">
+                            <h3>Push Notifications</h3>
+                            <div class="notification--switch">
+                                <input type="checkbox" class="pill-button-input" checked="checked" id="push-notification" checked>
+                                <label for="push-notification">
+                                    <span class="pill-button-selection-on">ON</span>
+                                    <span class="pill-button-selection-off">OFF</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="create--club-btn-wrapper">
+                            <button type="button" class="btn club--settings-save">Save Changes</button>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
 
