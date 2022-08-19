@@ -2207,7 +2207,6 @@ p{
     background: var(--gradient);
 }
 
-/* Edit Club Settings Modal */
 
 /************ All Post wrapper ************/
 
@@ -2238,7 +2237,6 @@ p{
     border-radius: 16px;
     padding: 20px;
 }
-
 .create--club-right-area{
     max-width: 65%;
     flex-basis: 65%;
@@ -2380,4 +2378,75 @@ p{
     font-size: 16px;
     line-height: 24px;
     color: var(--pink);
+}
+
+/* ================================================== */
+
+/*  Profile Settings Page CSS	*/
+
+/* ================================================== */
+
+.settings--content-wrapper{
+    width: 100%;
+    max-width:84%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.settings--tab-buttons{
+    max-width: 18.5%;
+    flex-basis: 18.5%;
+    margin-right: 20px;
+}
+
+.settings--tab-contens{
+    max-width: 80%;
+    flex-basis: 80%;
+    background-color:red;
+}
+
+/* Settings Tab button CSS */
+.settings--tab-buttons .nav-tabs{
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+    background: var(--white);
+    border-radius: 16px;
+    padding:20px;
+}
+.settings--tab-buttons .nav-tabs .nav-item:not(:last-child){
+    margin-bottom: 10px;
+}
+.settings--tab-buttons .nav-tabs .nav-item{
+    width: 100%;
+}
+.settings--tab-buttons .nav-tabs .nav-item .nav-link{
+    width: 100%;
+    border: 0;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+}
+.settings--tab-buttons .nav-tabs .nav-item .nav-link.active{
+    background: var(--gray-2);
+}
+.settings--tab-buttons .nav-tabs .nav-item .nav-link p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 2px;
+}
+.settings--tab-buttons .nav-tabs .nav-item .nav-link span{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--secondary-3);
 }
