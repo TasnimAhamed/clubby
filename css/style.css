@@ -2359,7 +2359,9 @@ p{
     color: var(--white);
     background: var(--pink);
 }
-
+.club--preview-content .club--share-btn{
+    color: var(--pink);
+}
 .club--preview-description h3{
     font-family: 'Source Sans Pro',sans-serif;
     font-style: normal;
