@@ -910,7 +910,7 @@
 
         <!-- Join Club Modal -->
         
-        <div class="modal fade join--club-modal" id="joinClub" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade join--club-modal" id="joinClub" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -934,7 +934,7 @@
 
         <!-- Show All Members Modal -->
 
-        <div class="modal fade show--all-members-modal" id="showALlMembers" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade show--all-members-modal" id="showALlMembers">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1311,13 +1311,16 @@
         <!-- Club Settings Edit -->
 
 
-        <div class="modal fade club--settings-modal" id="clubSettingsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade club--settings-modal" id="clubSettingsModal" data-bs-backdrop="static" data-bs-keyboard="false" >
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2>Club Settings</h2>
                     </div>
                     <div class="modal-body">
+                        
+                        <!-- Choose Club Icon -->
+
                         <div class="club--icon-modal">
                             <h4>Club Icon</h4>
                             <div class="choose--club-icon-wrapper">
@@ -1327,10 +1330,16 @@
                                 </buton>
                             </div>
                         </div>
+
+                        <!-- Edit Club Name -->
+
                         <div class="edit--club-name">
                             <label for="edit-club-name">Club Name</label>
                             <input type="text" name="edit-club-name" id="edit-club-name" class="form-control" placeholder="Cat lover club">
                         </div>
+
+                        <!-- Edit Club Description -->
+
                         <div class="edit--club-description">
                             <label for="edit-club-description">Club Description</label>
                             <textarea 
@@ -1339,6 +1348,9 @@
                                 placeholder="A house for cat lover all over the world. Download thousands of free & premium web design, illustration, bootstrap template, flutter app, icon, 3d illustration, and graphic assets for your UI, UX design project"
                             ></textarea>
                         </div>
+
+                        <!-- Choose Club Color -->
+
                         <div class="choose--club-color">
                             <h3>Club Color</h3>
                             <form class="club--colors-wrapper" action="#">
@@ -1417,6 +1429,9 @@
                                 </div>
                             </form>
                         </div>
+
+                        <!-- Show Budget to All Members -->
+
                         <div class="show--budget-all-members">
                             <h5>Show budget to all members</h5>
                             <div class="budget--toogler-show">
@@ -1425,6 +1440,7 @@
                             </div>
                             
                         </div>
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn club--settings-save">Save Changes</button>

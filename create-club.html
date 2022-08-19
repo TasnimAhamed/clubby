@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubby</title>
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Theme CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media CSS File -->
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+    
+    <!-- Header Section Start -->
+
+    <header class="header--section">
+        <nav class="header--section-nav">
+            <div class="logo--and--menu">
+                <div class="nav-brand logo">
+                    <a href="/"><img src="./img/clubby.png" alt="clubby"></a>
+                </div>
+                <div class="main--menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3437 8.0198L10.8797 0.839514C10.6386 0.621018 10.3249 0.5 9.99954 0.5C9.67419 0.5 9.36046 0.621018 9.11939 0.839514L0.656299 8.0199C0.449643 8.20713 0.284482 8.43555 0.171448 8.69047C0.0584132 8.94538 1.08609e-05 9.22115 0 9.5L0 19.8357C-1.99602e-09 20.0119 0.0699724 20.1808 0.194531 20.3054C0.31909 20.43 0.488037 20.5 0.664203 20.5L6 20.5C6.55229 20.5 7 20.0523 7 19.5V15.5C7 14.936 7.55209 14.4788 8.11629 14.4788H11.8828C12.4471 14.4788 13 14.936 13 15.5V19.5C13 20.0523 13.4477 20.5 14 20.5H19.3358C19.512 20.5 19.6809 20.43 19.8055 20.3054C19.93 20.1808 20 20.0119 20 19.8357V9.5C20 9.22114 19.9415 8.94537 19.8285 8.69044C19.7155 8.43551 19.5503 8.20707 19.3437 8.0198Z" fill="#C5D0E6"/>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.3333 2.5H15.2778V1.5C15.2778 1.23478 15.1666 0.98043 14.9686 0.792893C14.7707 0.605357 14.5022 0.5 14.2222 0.5C13.9423 0.5 13.6738 0.605357 13.4758 0.792893C13.2779 0.98043 13.1667 1.23478 13.1667 1.5V2.5H6.83333V1.5C6.83333 1.23478 6.72212 0.98043 6.52417 0.792893C6.32621 0.605357 6.05773 0.5 5.77778 0.5C5.49783 0.5 5.22934 0.605357 5.03139 0.792893C4.83343 0.98043 4.72222 1.23478 4.72222 1.5V2.5H3.66667C2.82681 2.5 2.02136 2.81607 1.4275 3.37868C0.83363 3.94129 0.5 4.70435 0.5 5.5V17.5C0.5 18.2956 0.83363 19.0587 1.4275 19.6213C2.02136 20.1839 2.82681 20.5 3.66667 20.5H16.3333C17.1732 20.5 17.9786 20.1839 18.5725 19.6213C19.1664 19.0587 19.5 18.2956 19.5 17.5V5.5C19.5 4.70435 19.1664 3.94129 18.5725 3.37868C17.9786 2.81607 17.1732 2.5 16.3333 2.5ZM5.77778 15.5C5.56901 15.5 5.36493 15.4414 5.19134 15.3315C5.01776 15.2216 4.88246 15.0654 4.80257 14.8827C4.72268 14.7 4.70178 14.4989 4.7425 14.3049C4.78323 14.1109 4.88377 13.9327 5.03139 13.7929C5.17901 13.653 5.36709 13.5578 5.57185 13.5192C5.77661 13.4806 5.98884 13.5004 6.18172 13.5761C6.3746 13.6518 6.53945 13.78 6.65544 13.9444C6.77143 14.1089 6.83333 14.3022 6.83333 14.5C6.83333 14.7652 6.72212 15.0196 6.52417 15.2071C6.32621 15.3946 6.05773 15.5 5.77778 15.5ZM14.2222 15.5H10C9.72005 15.5 9.45156 15.3946 9.25361 15.2071C9.05565 15.0196 8.94444 14.7652 8.94444 14.5C8.94444 14.2348 9.05565 13.9804 9.25361 13.7929C9.45156 13.6054 9.72005 13.5 10 13.5H14.2222C14.5022 13.5 14.7707 13.6054 14.9686 13.7929C15.1666 13.9804 15.2778 14.2348 15.2778 14.5C15.2778 14.7652 15.1666 15.0196 14.9686 15.2071C14.7707 15.3946 14.5022 15.5 14.2222 15.5ZM17.3889 9.5H2.61111V5.5C2.61111 5.23478 2.72232 4.98043 2.92028 4.79289C3.11823 4.60536 3.38672 4.5 3.66667 4.5H4.72222V5.5C4.72222 5.76522 4.83343 6.01957 5.03139 6.20711C5.22934 6.39464 5.49783 6.5 5.77778 6.5C6.05773 6.5 6.32621 6.39464 6.52417 6.20711C6.72212 6.01957 6.83333 5.76522 6.83333 5.5V4.5H13.1667V5.5C13.1667 5.76522 13.2779 6.01957 13.4758 6.20711C13.6738 6.39464 13.9423 6.5 14.2222 6.5C14.5022 6.5 14.7707 6.39464 14.9686 6.20711C15.1666 6.01957 15.2778 5.76522 15.2778 5.5V4.5H16.3333C16.6133 4.5 16.8818 4.60536 17.0797 4.79289C17.2777 4.98043 17.3889 5.23478 17.3889 5.5V9.5Z" fill="#C5D0E6"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 2.54697C0 1.232 0.912012 0.166016 2.03704 0.166016H16.2963C17.4214 0.166016 18.3333 1.232 18.3333 2.54697V4.92792H14.2593C12.5717 4.92792 11.2037 6.52685 11.2037 8.49935C11.2037 10.4719 12.5717 12.0708 14.2593 12.0708H18.3333V14.4517C18.3333 15.7667 17.4214 16.8327 16.2963 16.8327H2.03704C0.912012 16.8327 0 15.7667 0 14.4517V2.54697Z" fill="#C5D0E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 8.5C12.5 7.11925 13.566 6 14.881 6H17.9762C18.6337 6 19.1667 6.55963 19.1667 7.25V9.75C19.1667 10.4404 18.6337 11 17.9762 11H14.881C13.566 11 12.5 9.88075 12.5 8.5ZM16.0714 8.5C16.0714 9.19037 15.5385 9.75 14.881 9.75C14.2235 9.75 13.6905 9.19037 13.6905 8.5C13.6905 7.80963 14.2235 7.25 14.881 7.25C15.5385 7.25 16.0714 7.80963 16.0714 8.5Z" fill="#C5D0E6"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.1362 16.0634L18.2846 13.4649C18.2361 13.3167 18.2519 13.1573 18.3222 13.0184C18.9622 11.7537 19.2265 10.2605 18.9496 8.68658C18.5251 6.2738 16.7882 4.26889 14.5353 3.5C15.1166 4.92808 15.2939 6.51593 15.0035 8.09094C14.4135 11.2922 11.8934 13.8304 8.73269 14.407C8.32356 14.4816 7.9102 14.518 7.5 14.5286C8.45991 15.582 9.74119 16.3309 11.1705 16.5916C12.7083 16.8721 14.1694 16.611 15.409 15.9698C15.545 15.8994 15.7006 15.8838 15.8453 15.9329L18.4097 16.8023C18.8587 16.9546 19.2859 16.5201 19.1362 16.0634Z" fill="#C5D0E6"/>
+                                    <path d="M6.28733 0.283936C3.64364 0.774446 1.52509 2.91913 1.05135 5.56212C0.776565 7.09556 1.03887 8.55035 1.674 9.78252C1.7438 9.91784 1.75951 10.0731 1.71138 10.2175L0.866169 12.7492C0.717648 13.1942 1.14158 13.6175 1.58724 13.4692L4.13227 12.6221C4.27602 12.5742 4.43046 12.5895 4.5654 12.658C5.79562 13.2828 7.2457 13.5372 8.77199 13.2639C11.4124 12.791 13.5548 10.6808 14.049 8.04811C14.9199 3.41027 10.9306 -0.577595 6.28733 0.283936ZM7.97043 8.82401H4.68333C4.35912 8.82401 4.09633 8.56166 4.09633 8.23787C4.09633 7.91414 4.35912 7.65173 4.68333 7.65173H7.97043C8.29469 7.65173 8.55743 7.91414 8.55743 8.23787C8.55743 8.56166 8.29469 8.82401 7.97043 8.82401ZM10.3184 6.4795H4.68328C4.35907 6.4795 4.09628 6.21715 4.09628 5.89336C4.09628 5.56963 4.35907 5.30723 4.68328 5.30723H10.3183C10.6426 5.30723 10.9053 5.56963 10.9053 5.89336C10.9054 6.21715 10.6426 6.4795 10.3184 6.4795Z" fill="#C5D0E6"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notification--and--profile">
+                <ul class="nav">
+                    <li class="nav-item notification dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3325 13.5613H17.9128C19.069 13.5613 20 14.4747 20 15.6015V16.011C20 16.4648 19.6268 16.8266 19.1661 16.8266H0.833873C0.372903 16.8266 0 16.4613 0 16.011V15.6015C0 14.4752 0.93447 13.5613 2.08717 13.5613H1.66748C2.12554 13.5613 2.49994 13.1955 2.49994 12.7442V7.84691C2.49994 3.78752 5.85782 0.5 10.0001 0.5C14.1434 0.5 17.5003 3.78927 17.5003 7.84691V12.7442C17.5003 13.1983 17.8729 13.5613 18.3327 13.5613H18.3325ZM7.08301 17.6429H12.9163C12.9163 19.2208 11.6104 20.5 9.99967 20.5C8.38892 20.5 7.08301 19.2208 7.08301 17.6429Z" fill="#858EAD"/>
+                                <circle cx="16.5" cy="4" r="3" fill="#FF6934" stroke="#F4F6F8"/>
+                            </svg>                                
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="notification--header">
+                                <p class="notification--title">Notifications</p>
+                                <button class="btn mark--all-as-read">
+                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.91357 13.2872C5.30438 13.6803 5.94034 13.6805 6.3314 13.2877L16.477 3.09648C17.0429 2.52803 17.0433 1.60923 16.478 1.04022C15.9082 0.466688 14.9805 0.466334 14.4102 1.03943L5.62663 9.86662L2.58803 6.815C2.01849 6.24303 1.09251 6.24303 0.522973 6.815C-0.0428283 7.38323 -0.0431696 8.30183 0.522209 8.87047L4.91357 13.2872Z" fill="#97989D"/>
+                                    </svg>
+                                    <span>Mark All as Read</span>
+                                </button>
+                            </li>
+                            <li class="single--notification">
+                                <div class="notification--type-img">
+                                    <span  class="notification--profile-img">
+                                        <img src="./img/profile--img-1.png" alt="clubby">
+                                    </span>
+                                    <span  class="notification--type">
+                                        <img src="./img/comment--img.png" alt="clubby">
+                                    </span>
+                                </div>
+                                <div class="notification--text">
+                                    <h2>
+                                        <a href="">
+                                            Catalin Pit commented on your post
+                                        </a>
+                                    </h2>
+                                    <div class="notification--comment-text">
+                                        “Great ebook & giveaway!”
+                                    </div>
+                                    <h6>Hipnode. Book Giveaway: The Standout Developer by Randall Kanna</h6>
+                                    <p>
+                                        <span class="date">22Feb</span>
+                                        , 
+                                        <span class="time">3:26pm</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="single--notification">
+                                <div class="notification--type-img">
+                                    <span  class="notification--profile-img">
+                                        <img src="./img/profile--img-2.png" alt="clubby">
+                                    </span>
+                                    <span  class="notification--type">
+                                        <img src="./img/post.png" alt="clubby">
+                                    </span>
+                                </div>
+                                <div class="notification--text">
+                                    <h2>
+                                        <a href="">
+                                            Jubed Ahmed Published an post on Cat  Lovers Club
+                                        </a>
+                                    </h2>
+                                    <h6>The best cat toy in 2022</h6>
+                                    <p>
+                                        <span class="date">17Feb</span>
+                                        , 
+                                        <span class="time">10:48pm</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="single--notification">
+                                <div class="notification--type-img">
+                                    <span  class="notification--profile-img">
+                                        <img src="./img/profile--img-3.png" alt="clubby">
+                                    </span>
+                                    <span  class="notification--type">
+                                        <img src="./img/like.png" alt="clubby">
+                                    </span>
+                                </div>
+                                <div class="notification--text">
+                                    <h2>
+                                        <a href="">
+                                            Tushar Srivastava Loike your post
+                                        </a>
+                                    </h2>
+                                    <h6>Best Cat ever</h6>
+                                    <p>
+                                        <span class="date">13Feb</span>
+                                        , 
+                                        <span class="time">1:54am</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown profile">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <img src="./img/profile--img.svg" alt="clubby" class="profile--img">
+                            <span class="profile--name">James Houdini</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./img/settings.png" alt="clubby">
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header Section End -->
+
+
+    <!-- Main Section Start -->
+
+    <main class="main--content">
+
+        <div class="create--club-wrapper">
+            <div class="create--club-left-area">
+                <div class="create--club-left-area-content">
+                    <div class="club--details-title">
+                        <h2>Club Details</h2>
+                    </div>
+
+                    <div class="club--details-content">
+
+                        <!-- Choose Club Icon -->
+
+                        <div class="club--icon-modal">
+                            <h4>Club Icon</h4>
+                            <div class="choose--club-icon-wrapper">
+                                <img src="./img/club--img.png" alt="clubby">
+                                <buton class="btn choose--club-icon">
+                                    <img src="./img/notification.png" alt="clubby">
+                                </buton>
+                            </div>
+                        </div>
+
+                        <!-- Edit Club Name -->
+
+                        <div class="edit--club-name">
+                            <label for="edit-club-name">Club Name</label>
+                            <input type="text" name="edit-club-name" id="edit-club-name" class="form-control" placeholder="Cat lover club">
+                        </div>
+
+                        <!-- Edit Club Description -->
+
+                        <div class="edit--club-description">
+                            <label for="edit-club-description">Club Description</label>
+                            <textarea class="form-control" name="edit-club-description" id="edit-club-description" placeholder="A house for cat lover all over the world. Download thousands of free &amp; premium web design, illustration, bootstrap template, flutter app, icon, 3d illustration, and graphic assets for your UI, UX design project"></textarea>
+                        </div>
+
+                        <!-- Show Budget to All Members -->
+
+                        <div class="show--budget-all-members">
+                            <h5>Show budget to all members</h5>
+                            <div class="budget--toogler-show">
+                                <input type="checkbox" class="show--budget-toggler" id="show--budget">
+                                <label for="show--budget" class="show--budget-toggler-btn"></label>
+                            </div>
+                        </div>
+
+                        <!-- Allow Post Announcement -->
+
+                        <div class="allow--post-announcement">
+                            <h5>Allow all Members to post announcements</h5>
+                            <div class="budget--toogler-show">
+                                <input type="checkbox" class="show--budget-toggler" id="post--announcement-toggler">
+                                <label for="post--announcement-toggler" class="show--budget-toggler-btn"></label>
+                            </div>
+                        </div>
+
+                        <!-- Choose Club Color -->
+
+                        <div class="choose--club-color">
+                            <h3>Club Color</h3>
+                            <form class="club--colors-wrapper" action="#">
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="black" value="black" class="form-check-input">
+                                    <label for="black" class="black"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="pink" value="pink" class="form-check-input" checked="">
+                                    <label for="pink" class="pink"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="purple" value="purple" class="form-check-input">
+                                    <label for="purple" class="purple"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="orange" value="orange" class="form-check-input">
+                                    <label for="orange" class="orange"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="blue" value="blue" class="form-check-input">
+                                    <label for="blue" class="blue"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="light-blue" value="light-blue" class="form-check-input">
+                                    <label for="light-blue" class="light-blue"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="yellow" value="yellow" class="form-check-input">
+                                    <label for="yellow" class="yellow"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="green" value="green" class="form-check-input">
+                                    <label for="green" class="green"></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="club-color" id="red" value="red" class="form-check-input">
+                                    <label for="red" class="red"></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Create Club Button Wrapper -->
+
+                    <div class="create--club-btn-wrapper">
+                        <button type="button" class="btn club--settings-save">Create Club</button>
+                        <button type="button" class="btn club--settings-cancel">Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="create--club-right-area">
+                dfkdfj
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Main Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <!-- Script Files -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

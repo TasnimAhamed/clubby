@@ -254,8 +254,6 @@ p{
 }
 
 
-
-
 /* ================================================== */
 
 /*  Header Section CSS	*/
@@ -1627,7 +1625,7 @@ p{
 }
 /* Explore More */
 
-/* All Post wrapper */
+/************ All Post wrapper ************/
 
 .single--post-wrapper{
     background: var(--white);
@@ -2141,19 +2139,22 @@ p{
 .club--colors-wrapper .form-group label.red{
     background: var(--red);
 }
-.show--budget-all-members{
+.show--budget-all-members,
+.allow--post-announcement{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.show--budget-all-members h5{
+.show--budget-all-members h5,
+.allow--post-announcement h5{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
     color: var(--secondary-color);
+    margin-bottom: 0;
 }
 
 .show--budget-toggler {
@@ -2206,6 +2207,75 @@ p{
 
 /* Edit Club Settings Modal */
 
+/************ All Post wrapper ************/
 
 
-/* All Post wrapper */
+/* ================================================== */
+
+/*  Create Club Page CSS	*/
+
+/* ================================================== */
+
+.create--club-wrapper{
+    width: 100%;
+    max-width:84%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.create--club-left-area{
+    max-width: 34%;
+    flex-basis: 34%;
+    margin-right: 20px;
+}
+
+.create--club-left-area-content{
+    width: 100%;
+    background: var(--white);
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.create--club-right-area{
+    max-width: 65%;
+    flex-basis: 65%;
+    background:var(--white);
+}
+
+/************ Create Club Left Area CSS   ************/
+
+.club--details-title{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-4);
+}
+.club--details-title h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--secondary-black);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.club--details-content{
+    padding-top: 20px;
+}
+.club--details-content .club--icon-modal{
+    text-align: left;
+}
+.club--details-content .show--budget-all-members,
+.club--details-content .allow--post-announcement{
+    margin-bottom: 16px;
+}
+.create--club-btn-wrapper{
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.create--club-left-area-content .create--club-btn-wrapper{
+    margin-bottom: 0;
+}
