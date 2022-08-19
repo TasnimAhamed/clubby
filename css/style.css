@@ -2095,9 +2095,11 @@ p{
 .club--colors-wrapper{
     display: flex;
     margin-bottom: 16px;
+    flex-wrap: wrap;
 }
 .club--colors-wrapper .form-group:not(:last-child){
     margin-right: 10px;
+    margin-bottom: 6px;
 }
 .club--colors-wrapper .form-group input{
     display: none;
@@ -2402,7 +2404,6 @@ p{
 .settings--tab-contens{
     max-width: 80%;
     flex-basis: 80%;
-    background-color:red;
 }
 
 /* Settings Tab button CSS */
@@ -2448,5 +2449,100 @@ p{
     font-weight: 400;
     font-size: 10px;
     line-height: 16px;
+    color: var(--secondary-3);
+}
+
+.account--details--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*********** Account Content Wrapper ***********/
+
+.account--content--wrapper{
+    width: 44%;
+    flex-basis: 44%;
+}
+
+.account--content{
+    background: var(--white);
+    border-radius: 16px;
+    padding:20px;
+    margin-right: 20px;
+}
+.account--content h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--secondary-black);
+    margin-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--gray-4);
+}
+.account--content .club--icon-modal{
+    text-align:left;
+}
+.account--content .club--icon-modal,
+.account--content .edit--club-name,
+.account--content .choose--club-color{
+    margin-bottom: 24px;
+}
+
+/************ Account Preview ************/
+
+
+.account--preview--wrapper{
+    width: 56%;
+    flex-basis: 56%;
+}
+.account--preview{
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px;
+}
+.account--preview h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.preview--account-name-img{
+    padding: 22.5px;
+    background: #FFECE6;
+    border-radius: 10px;
+    min-height: 201px;
+    text-align: center;
+}
+.preview--account-name-img img{
+    width: 80px;
+    height:80px;
+    margin-bottom: 16px;
+}
+.preview--account-name-img h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #192126;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.preview--account-name-img p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
     color: var(--secondary-3);
 }
