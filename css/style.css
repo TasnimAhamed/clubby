@@ -1410,7 +1410,8 @@ p{
 .club--share-btn svg{
     margin-right: 8px;
 }
-.club--share-btn:hover{
+.club--share-btn:hover,
+.club--share-btn:focus{
     background: var(--white);
 }
 .club--leave-btn{
