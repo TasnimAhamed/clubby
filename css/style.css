@@ -1406,7 +1406,8 @@ p{
     line-height: 18px;
     color: #192126;
 }
-.club--share-btn img{
+.club--share-btn img,
+.club--share-btn svg{
     margin-right: 8px;
 }
 .club--share-btn:hover{
@@ -2240,7 +2241,6 @@ p{
 .create--club-right-area{
     max-width: 65%;
     flex-basis: 65%;
-    background:var(--white);
 }
 
 /************ Create Club Left Area CSS   ************/
@@ -2278,4 +2278,103 @@ p{
 }
 .create--club-left-area-content .create--club-btn-wrapper{
     margin-bottom: 0;
+}
+.create--club-right-area-content{
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px;
+}
+.club--preview-title{
+    margin-bottom: 24px;
+}
+.club--preview-title h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.club--preview-content{
+    min-height: 309px;
+    background: rgba(238, 113, 158, 0.1);
+    border-radius: 10px;
+    padding: 17.5px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.club--preview-img{
+    margin-bottom: 20px;
+}
+.club--preview-img img{
+    width:130px;
+    height:130px;
+}
+.club--preview-name-author {
+    margin-bottom: 24px;
+}
+.club--preview-name-author h2 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    color: var(--pink);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.club--preview-name-author p {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-3);
+}
+.club--join--btn{
+    margin-right: 16px;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 92px;
+    height: 40px;
+    background: var(--pink);
+    border-radius: 6px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white);
+}
+.club--join--btn:hover,
+.club--join--btn:focus{
+    color: var(--white);
+    background: var(--pink);
+}
+
+.club--preview-description h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--pink);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.club--preview-description p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--pink);
 }
