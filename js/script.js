@@ -6,6 +6,9 @@ document.querySelector(".notification .dropdown-menu").addEventListener("click",
 document.querySelector(".profile .dropdown-menu").addEventListener("click",(e)=>{
     e.stopPropagation();                 
 })
+document.querySelector(".club-mesage--profile-img .dropdown-menu")?.addEventListener("click",(e)=>{
+    e.stopPropagation();                 
+})
 
 
 // Show public budget
@@ -13,6 +16,6 @@ document.querySelector(".profile .dropdown-menu").addEventListener("click",(e)=>
 const showPublicWrapper=document.getElementById('show--public')
 const showPublicToogler=document.getElementById('showPublic')
 
-showPublicToogler.addEventListener('change',function(e){
+showPublicToogler?.addEventListener('change',function(e){
     showPublicWrapper.classList.toggle('active')
 })
