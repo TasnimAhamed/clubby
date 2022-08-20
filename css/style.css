@@ -40,6 +40,7 @@ html{
     --gray-3:#F7F7F7;
     --gray-4:#F0F0F0;
     --gray-5:#D9D9D9;
+    --gray-9:#454545;
     --gray-11:#1F1F1F;
 }
 
@@ -521,6 +522,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: calc(100vh - 90px);
 }
 
 .left--area-content{
@@ -1639,6 +1641,7 @@ p{
 }
 .post--content{
     display:flex;
+    justify-content: space-between;
 }
 .post--text-box{
     padding-right: 30px;
@@ -2846,4 +2849,188 @@ p{
     font-size: 14px;
     line-height: 21px;
     color: #3F4354;
+}
+
+.message--footer-area{
+    padding: 19px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile--and-files{
+    max-width:106px;
+    width: 100%;
+    margin-right: 20px;
+}
+.profile--and-files > img.img-fluid{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile--and-files .upload--files{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    box-shadow: none;
+    background: var(--gray-2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+}
+.profile--and-files .upload--files:hover,
+.profile--and-files .upload--files:focus{
+    background: var(--gray-2);
+}
+.send--message-btn{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    box-shadow: none;
+    width: 87px;
+    height: 44px;
+    background: var(--gradient);
+    border-radius: 6px;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white);
+}
+.send--message-btn:hover,
+.send--message-btn:focus{
+    color: var(--white);
+    background:var(--gradient);
+}
+.send--message-input{
+    margin-right: 20px;
+    width: 100%;
+}
+.send--message-input input{
+    width: 100%;
+    border:0;
+    outline: 0;
+    padding: 12px;
+    background: var(--secondary-6);
+    border-radius: 6px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #858EAD;
+}
+.send--message-input input:focus{
+    background: var(--secondary-6);
+    box-shadow: none;
+}
+.message--body-area{
+    padding: 30px 24px 0 24px;
+    max-height: 560px;
+    overflow-y: scroll;
+}
+
+.message--body-area::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.message--body-area::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: transparent;
+}
+
+.message--body-area::-webkit-scrollbar-thumb
+{
+	background: #1F1F1F;
+    border-radius: 4px;
+}
+
+.member--message--wrapper,
+.my--message--wrapper{
+    display: flex;
+    margin-bottom: 24px;
+}
+.member--message--wrapper{
+    justify-content: flex-start;
+}
+.my--message--wrapper{
+    justify-content: flex-end;
+}
+
+.member--profile-img{
+    margin-right: 20px;
+}
+.my--profile-img{
+    margin-left: 20px;
+}
+.member--profile-img img,
+.my--profile-img img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.member--message-text-wrapper,
+.my--message-text-wrapper{
+    width: 100%;
+    max-width:390px;
+}
+.member--message-text,
+.my--message-text{
+    width:fit-content;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+.member--message-text{
+    background: var(--secondary-6);
+}
+.my--message-text{
+    margin-left: auto;
+    background: var(--gradient);
+}
+.member--message-text h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #192126;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.member--message-text p,
+.my--message-text p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.member--message-text p{
+    color: var(--gray-9);
+}
+.my--message-text p{
+    color: var(--white);
+}
+.member--message-text-wrapper p.time,
+.my--message-text-wrapper p.time{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-3);
+}
+.my--message-text-wrapper p.time{
+    text-align: right;
 }
