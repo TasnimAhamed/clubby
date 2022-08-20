@@ -40,6 +40,7 @@ html{
     --gray-3:#F7F7F7;
     --gray-4:#F0F0F0;
     --gray-5:#D9D9D9;
+    --gray-7:#8C8C8C;
     --gray-9:#454545;
     --gray-11:#1F1F1F;
 }
@@ -548,10 +549,12 @@ p{
 /* ================================================== */
 
 
-.join--club-btn-wrapper{
+.join--club-btn-wrapper,
+.desposit--btn-wrapper{
     margin-bottom: 16px;
 }
-.join--club-btn{
+.join--club-btn,
+.create--deposit-btn{
     border:0;
     outline: 0;
     box-shadow: none;
@@ -569,11 +572,14 @@ p{
     background: var(--gradient);
     border-radius: 12px;
 }
-.join--club-btn img{
+.join--club-btn img,
+.create--deposit-btn img{
     margin-right: 10px;
 }
 .join--club-btn:hover,
-.join--club-btn:focus{
+.join--club-btn:focus,
+.create--deposit-btn:hover,
+.create--deposit-btn:focus{
     color: var(--white);
 }
 
@@ -673,10 +679,12 @@ p{
 
 /* Create Club Btn */
 
-.create--club-btn-wrapper{
+.create--club-btn-wrapper,
+.send--funds-btn-wrapper{
     margin-bottom: 16px;
 }
-.create--club-btn{
+.create--club-btn,
+.send--funds-btn{
     border:0;
     outline: 0;
     box-shadow: none;
@@ -695,11 +703,14 @@ p{
     border-radius: 12px;
     cursor: pointer;
 }
-.create--club-btn img{
+.create--club-btn img,
+.send--funds-btn img{
     margin-right: 10px;
 }
 .create--club-btn:hover,
-.create--club-btn:focus{
+.create--club-btn:focus,
+.send--funds-btn:hover,
+.send--funds-btn:focus{
     background: var(--white);
     color: #192126;
 }
@@ -1193,10 +1204,14 @@ p{
 /* Upcoming Event List */
 
 /* Budget Goals */
-.budget--goals-wrapper{
+.budget--goals-wrapper,
+.officers-budget--goals-wrapper{
     background: var(--white);
     border-radius: 12px;
     padding: 16px;
+}
+.officers-budget--goals-wrapper{
+    margin-bottom: 16px;
 }
 .budget--goals-header{
     display:flex;
@@ -1322,6 +1337,7 @@ p{
 }
 .budget--goals-right-content{
     padding-left: 10px;
+    text-align: right;
 }
 .budget--goals-right-content p{
     font-family: 'Manrope',sans-serif;
@@ -1330,6 +1346,27 @@ p{
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.2px;
+    color: var(--green);
+}
+
+.budget--goals-right-content h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #1A202C;
+}
+
+.budget--goals-right-content span{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
     color: var(--green);
 }
 /* Budget Goals */
@@ -2945,7 +2982,7 @@ p{
 
 .message--body-area::-webkit-scrollbar
 {
-	width: 7px;
+	width: 6px;
 	background-color: transparent;
 }
 
@@ -3015,7 +3052,48 @@ p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
+.delete--message-toogler::after{
+    display: none;
+}
+.delete--your-message{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 170px;
+    height:54px;
+    background:var(--white);
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--red);
+    box-shadow: 0 16px 100px -20px #97989d;
+}
+.delete--your-message img{
+    margin-right: 12px;
+}
+.member--message-text .dropdown-menu,
+.my--message-text .dropdown-menu{
+    padding:0;
+    border:0;
+}
+.member--message-text .dropdown-toggle,
+.my--message-text .dropdown-toggle{
+    white-space: normal!important;
+}
+.delete--your-message:hover,
+.delete--your-message:focus{
+    background:var(--white);
+    color: var(--red);
+    box-shadow: 0 16px 100px -20px #97989d;
+}
+
 .member--message-text p{
     color: var(--gray-9);
 }
@@ -3033,4 +3111,166 @@ p{
 }
 .my--message-text-wrapper p.time{
     text-align: right;
+}
+
+
+/* ================================================== */
+
+/*  Budget Goals CSS	*/
+
+/* ================================================== */
+.budget--goals-page-content-wrapper{
+    width: 100%;
+    max-width:84%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.total--balance-wrapper{
+    padding:20px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    background: url(./../img/send--fund-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.total--balance-wrapper p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    margin-bottom: 37px;
+}
+.total--balance-wrapper h2{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 110%;
+    color: var(--white);
+}
+.total--balance-wrapper span{
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: var(--white);
+}
+.budget--activity-tabs{
+    background: var(--white);
+    border-radius: 12px;
+    padding:16px;
+}
+.budget--activity-tabs .nav-tabs{
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-4);
+}
+.budget--activity-tabs .nav-tabs li button{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #8181A5;
+    width: 153px;
+    height:40px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+.budget--activity-tabs .nav-tabs li button.active{
+    background: rgba(0, 112, 178, 0.1);
+    border: 1px solid #ECECF2;
+    color:var(--blue);
+}
+.budget--activity-tabs .nav-tabs li button:hover{
+    border: 1px solid transparent;
+}
+.budget--activity-details{
+    margin-top: 16px;
+}
+.budget--activity-details h2{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+}
+.single--budget-activity-content{
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.send--fund-profile-img{
+    margin-right: 30px;
+    position: relative;
+}
+.send--fund-profile-img img.create--deposit-profile-img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.send--fund-profile-img .plus--img,
+.send--fund-profile-img .send--fund-img{
+    width: 32px;
+    height:32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    background: var(--white);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    position:absolute;
+    bottom: 18px;
+    right: -10px;
+}
+.single--budget-activity-text h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color:var(--gray-7);
+}
+.single--budget-activity-text p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-3);
+    margin-bottom: 4px;
+}
+.single--budget-activity-text p span.desposit--fund{
+    color: var(--green);
+}
+.single--budget-activity-text p span.send--fund{
+    color: var(--red);
+}
+.single--budget-activity-text > span{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-3);
 }
