@@ -3260,7 +3260,7 @@ p{
     color: var(--secondary-3);
     margin-bottom: 4px;
 }
-.single--budget-activity-text p span.desposit--fund{
+.single--budget-activity-text p span.deposit--fund{
     color: var(--green);
 }
 .single--budget-activity-text p span.send--fund{
