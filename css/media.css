@@ -199,9 +199,15 @@
     .collapse--explore-btn{
         display: none;
     }
-
-    .post--announcement-wrapper{
+    .post--announcement-profile-img{
         display: none;
+    }
+    .create--post-btn{
+        width:91px;
+        font-size:12px;
+    }
+    .post--announcement-wrapper{
+        padding:16px;
     }
 
     .single--post-wrapper {
@@ -260,6 +266,111 @@
         color: #0070B2;
     }
 
+
+    /* ================================================== */
+
+    /*  Create Club Page CSS	*/
+
+    /* ================================================== */
+
+    .create--club-wrapper{
+        width: 100%;
+        max-width:100%;
+        flex-wrap: wrap;
+    }
+    .create--club-left-area{
+        max-width:100%;
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .create--club-left-area-content{
+        padding: 16px;
+    }
+    .club--settings-save, .club--settings-cancel{
+        width:144px;
+    }
+    .create--club-right-area{
+        max-width:100%;
+        flex-basis: 100%;
+    }
+    .create--club-right-area-content{
+        padding: 16px;
+    }
+    .club--preview-title{
+        margin-bottom: 16px;
+    }
+    .club--preview-title h2{
+        text-align: left;
+    }
+
+    /* ================================================== */
+
+    /*  Message Page CSS CSS	*/
+
+    /* ================================================== */
+
+    .messager--header-area{
+        padding:16px;
+    }
+    .message--body-area{
+        padding:20px 16px 0 16px;
+    }
+    .member--message--wrapper, .my--message--wrapper{
+        margin-bottom: 16px;
+    }
+    .member--profile-img {
+        margin-right: 16px;
+    }
+    .member--profile-img img, .my--profile-img img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+    .my--profile-img{
+        margin-left: 16px;
+    }
+    .message--footer-area{
+        padding: 16px;
+    }
+    .profile--and-files > img.img-fluid{
+        margin-right: 8px;
+    }
+    .profile--and-files {
+        max-width: 80px;
+        margin-right: 8px;
+    }
+    .send--message-input {
+        margin-right: 8px;
+    }
+    .profile--and-files > img.img-fluid,
+    .profile--and-files .upload--files{
+        width: 32px;
+        height: 32px;
+    }
+    .send--message-input{
+        width:85%;
+    }
+    .send--message-input input{
+        padding:8px 12px;
+    }
+    .send--message-btn{
+        height:38px;
+    }
+
+    .club-mesage--profile-img .dropdown-menu{
+        top: 64px!important;
+        left: -16px!important;
+        width: 100%;
+        min-width: 342px;
+        max-width: 342px;
+    }
+
+    .club-mesage--profile-img .dropdown-menu::after{
+        top: -14px;
+        left: 46px;
+        transform: unset;
+    }
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -465,6 +576,44 @@
         padding: 0;
     }
 
+    .member--list .member--list-item {
+        max-width: 10%;
+        flex-basis: 10%;
+        margin-top: 20px;
+    }
+
+
+     /* ================================================== */
+
+    /*  Create Club Page CSS	*/
+
+    /* ================================================== */
+
+    .create--club-wrapper{
+        width: 100%;
+        max-width:100%;
+        flex-wrap: wrap;
+    }
+    .create--club-left-area{
+        max-width:100%;
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    
+    .club--settings-save, .club--settings-cancel{
+        width:144px;
+    }
+    .create--club-right-area{
+        max-width:100%;
+        flex-basis: 100%;
+    }
+    .create--club-right-area-content{
+        padding: 20px;
+    }
+    .club--preview-title{
+        margin-bottom: 16px;
+    }
 
 }
 
@@ -575,6 +724,38 @@
         margin-top: 16px;
     }
 
+     /* ================================================== */
+
+    /*  Create Club Page CSS	*/
+
+    /* ================================================== */
+
+    .create--club-wrapper{
+        max-width:100%;
+    }
+    .create--club-right-area-content{
+        padding: 20px;
+    }
+    .club--settings-save, .club--settings-cancel{
+        width:144px;
+    }
+    .show--budget-all-members h5, .allow--post-announcement h5{
+        padding-right: 8px;
+    }
+
+
+    /* ================================================== */
+
+    /*  Message Page CSS	*/
+
+    /* ================================================== */
+
+    .club-mesage--profile-img .dropdown-menu{
+        width: 100%;
+        min-width:380px;
+        max-width:380px;
+    }
+
 }
 
 @media (min-width:1200px) and (max-width:1399px){
@@ -667,6 +848,25 @@
         margin-top: 16px;
     }
 
+      /* ================================================== */
+
+    /*  Create Club Page CSS	*/
+
+    /* ================================================== */
+
+    .create--club-wrapper{
+        max-width:100%;
+    }
+    .create--club-right-area-content{
+        padding: 20px;
+    }
+    .club--settings-save, .club--settings-cancel{
+        width:144px;
+    }
+    .show--budget-all-members h5, .allow--post-announcement h5{
+        padding-right: 8px;
+    }
+
 }
 
 @media (min-width:1400px) and (max-width:1599px){
@@ -680,5 +880,16 @@
     .login--row-right-wrapper{
         padding:114px 136px 74px 136px;
     }
+
+    /* ================================================== */
+
+    /*  Index Page CSS CSS	*/
+
+    /* ================================================== */
+    .left--area-content,
+    .middle--area-content{
+        margin-right: 16px;
+    }
+
 
 }
