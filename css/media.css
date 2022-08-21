@@ -117,6 +117,149 @@
     }
 
 
+
+    /* ================================================== */
+
+    /*  Index Page CSS	*/
+
+    /* ================================================== */
+
+    .main--content{
+        padding: 16px;
+        margin-bottom: 82px;
+    }
+
+
+    /* Left Area Content CSS */
+
+    .left--area-content{
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+
+    .join--club-modal .modal-content{
+        padding: 16px;
+    }
+
+    .join--club-modal .modal-content .modal-header h2 {
+        font-size:22px;
+    }
+
+    .join--club-modal .modal-content .modal-body {
+        padding:24px 0; 
+    }
+    .join--club-submit, .join--club-cancel{
+        width:144px;
+    }
+
+    /* Right Area Content CSS */
+
+    .right--area-content{
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+    .show--all-members-modal .modal-content{
+        padding: 16px;
+    }
+    .show--all-members-modal .modal-content .modal-header h2{
+        font-size:22px;
+    }
+    .show--all-members-modal .modal-content .modal-body{
+        padding: 16px 0 0 0;
+    }
+
+    /* Middle Area Content CSS*/
+
+    .middle--area-content{
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+
+    .club--profile-view{
+        padding:16px;
+        min-height: auto;
+    }
+    .club--profile-share-leave-edit .club--edit-btn{
+        display: none;
+    }
+    .club--profile-share-leave-edit .club--leave-btn{
+        width: 40px;
+    }
+    .club--profile-share-leave-edit .club--leave-btn span{
+        display: none
+    }
+    .club--profile-share-leave-edit .club--leave-btn img{
+        margin-right: 0;
+    }
+    .collapse--explore-btn{
+        display: none;
+    }
+
+    .post--announcement-wrapper{
+        display: none;
+    }
+
+    .single--post-wrapper {
+        padding:16px;
+    }
+    .post--comment-box{
+        padding-right: 0;
+    }
+    .post--text-box{
+        padding-right: 24px;
+    }
+    .post--author-box,
+    .post--author-details,
+    .post--author-liks-comment{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .post--author-liks-comment{
+        margin-top: 16px;
+    }
+    .post--author-liks-comment p.total--likes {
+        margin-right: 24px;
+    }
+    .show--all-comment{
+        padding: 0;
+    }
+    .club--profile-share-leave-edit{
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+
+    .explore--about-members-list{
+        width: 100%;
+        height: 64px;
+        background: var(--white);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .explore--about-members-list a:not(:last-child){
+        padding-right: 4px;
+    }
+    .explore--about-members-list a{
+        font-family: 'Source Sans Pro',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3F4354;
+        text-decoration: none;
+    }
+    .explore--about-members-list a.active{
+        color: #0070B2;
+    }
+
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -227,6 +370,100 @@
         margin-right: 10px;
     }
 
+     /* ================================================== */
+
+    /*  Index Page CSS	*/
+
+    /* ================================================== */
+
+    .main--content{
+        padding: 16px;
+        margin-bottom: 82px;
+    }
+
+
+    /* Left Area Content CSS */
+
+    .left--area-content{
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+
+    .join--club-modal .modal-content{
+        padding: 16px;
+    }
+
+    .join--club-modal .modal-content .modal-header h2 {
+        font-size:22px;
+    }
+
+    .join--club-modal .modal-content .modal-body {
+        padding:24px 0; 
+    }
+    .join--club-submit, .join--club-cancel{
+        width:144px;
+    }
+
+    /* Right Area Content CSS */
+
+    .right--area-content{
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+    .show--all-members-modal .modal-content{
+        padding: 16px;
+    }
+    .show--all-members-modal .modal-content .modal-header h2{
+        font-size:22px;
+    }
+    .show--all-members-modal .modal-content .modal-body{
+        padding: 16px 0 0 0;
+    }
+
+    /* Middle Area Content CSS*/
+
+    .middle--area-content{
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+
+    .club--profile-view{
+        padding:16px;
+        min-height: auto;
+    }
+    .collapse--explore-btn{
+        display: none;
+    }
+
+    .single--post-wrapper {
+        padding:16px;
+    }
+    .post--comment-box{
+        padding-right: 0;
+    }
+    .post--text-box{
+        padding-right: 24px;
+    }
+    .post--author-box,
+    .post--author-details,
+    .post--author-liks-comment{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .post--author-liks-comment{
+        margin-top: 16px;
+    }
+    .post--author-liks-comment p.total--likes {
+        margin-right: 24px;
+    }
+    .show--all-comment{
+        padding: 0;
+    }
 
 
 }
@@ -263,8 +500,82 @@
         margin-right: 72px;
     }
 
-}
 
+    /* ================================================== */
+
+    /*  Index Page CSS	*/
+
+    /* ================================================== */
+
+    .header--section{
+        padding: 20px 24px;
+    }
+
+    .main--content{
+        padding:20px 24px;
+    }
+
+    .left--area-content {
+        max-width: 20%;
+        flex-basis: 20%;
+        margin-right: 16px;
+    }
+
+    .middle--area-content {
+        max-width: 52%;
+        flex-basis: 52%;
+        margin-right: 16px;
+    }
+
+    .right--area-content {
+        max-width: 24%;
+        flex-basis: 24%;
+    }
+
+    .club--profile-view{
+        padding:16px;
+    }
+    .post--announcement-wrapper{
+        padding:16px;
+    }
+    .single--post-wrapper{
+        padding:16px;
+    }
+    .post--text-box{
+        padding-right: 24px;
+    }
+    .post--comment-box{
+        padding-right: 0;
+    }
+
+    .about--content{
+        padding:16px;
+    }
+    .all--member-list{
+        padding:16px;
+    }
+    .upcomming--event-list{
+        padding:16px 10px 16px 16px;
+    }
+    .upcoming--event-content span{
+        margin-top: 4px;
+    }
+    .member--list {
+        justify-content: flex-start;
+    }
+    .member--list .member--list-item {
+        max-width: 25%;
+        flex-basis: 25%;
+        margin-top: 16px;
+    }
+    .budget--goals-header{
+        flex-wrap: wrap;
+    }
+    .show--public{
+        margin-top: 16px;
+    }
+
+}
 
 @media (min-width:1200px) and (max-width:1399px){
 
@@ -280,6 +591,80 @@
 
     .login--row-right-wrapper{
         padding:96px 32px 72px 32px;
+    }
+
+    /* ================================================== */
+
+    /*  Index Page CSS	*/
+
+    /* ================================================== */
+
+    .header--section{
+        padding: 20px 24px;
+    }
+
+    .main--content{
+        padding:20px 24px;
+    }
+
+    .left--area-content {
+        max-width: 20%;
+        flex-basis: 20%;
+        margin-right: 16px;
+    }
+
+    .middle--area-content {
+        max-width: 52%;
+        flex-basis: 52%;
+        margin-right: 16px;
+    }
+
+    .right--area-content {
+        max-width: 24%;
+        flex-basis: 24%;
+    }
+
+    .club--profile-view{
+        padding:16px;
+    }
+    .post--announcement-wrapper{
+        padding:16px;
+    }
+    .single--post-wrapper{
+        padding:16px;
+    }
+    .post--text-box{
+        padding-right: 24px;
+    }
+    .post--comment-box{
+        padding-right: 0;
+    }
+
+    .about--content{
+        padding:16px;
+    }
+    .all--member-list{
+        padding:16px;
+    }
+    .upcomming--event-list{
+        padding:16px 10px 16px 16px;
+    }
+    .upcoming--event-content span{
+        margin-top: 4px;
+    }
+    .member--list {
+        justify-content: flex-start;
+    }
+    .member--list .member--list-item {
+        max-width: 25%;
+        flex-basis: 25%;
+        margin-top: 16px;
+    }
+    .budget--goals-header{
+        flex-wrap: wrap;
+    }
+    .show--public{
+        margin-top: 16px;
     }
 
 }

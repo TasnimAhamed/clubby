@@ -958,7 +958,7 @@ p{
     padding-bottom: 16px;
 }
 .show--all-members-modal .modal-content .modal-body{
-    padding:24px 0;
+    padding:24px 0 0 0;
 }
 .show--all-members-modal .modal-content .modal-body .member--search-box{
     border: 0;
@@ -1058,17 +1058,23 @@ p{
 }
 .modal--officers-list-options .dropdown .dropdown-menu,
 .modal--members-list-options .dropdown .dropdown-menu{
+    position: relative;
+}
+.modal--officers-list-options .dropdown .dropdown-menu,
+.modal--members-list-options .dropdown .dropdown-menu{
     padding:20px 16px;
     min-width: 242px;
     border:0;
-    transform: translate(-140px, 32px)!important;
+    transform: unset!important;
     box-shadow: 0 16px 100px -20px #97989d;
+    left: -196px!important;
+    top: 40px!important;
 }
 .modal--officers-list-options .dropdown .dropdown-menu::after,
 .modal--members-list-options .dropdown .dropdown-menu::after{
     position: absolute;
     top: -10px;
-    right: 31%;
+    right: 11%;
     margin-left: -10px;
     content: "";
     display: block;
@@ -1454,7 +1460,7 @@ p{
     padding:32px;
     margin-bottom: 16px;
     width: 100%;
-    min-height: 373px;
+    min-height: auto;
 }
 .club--profile-wrapper{
     min-height: 309px;
@@ -2005,7 +2011,7 @@ p{
     width: 100%;
     background: var(--white);
     border-radius: 16px;
-    padding: 16px 0;
+    padding: 16px 0 0 0 ;
 }
 
 .make--comment-img{
@@ -2061,6 +2067,34 @@ p{
 .comment--send-btn:focus{
     background: #192126;
     color: var(--white);
+}
+
+.show--more-post-btn{
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 141px;
+    height: 39px;
+    background: var(--white);
+    border-radius: 6px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--blue);
+}
+.show--more-posts-wrapper{
+    width: 100%;
+    text-align: center;
+}
+.show--more-post-btn:hover,
+.show--more-post-btn:focus{
+    background: var(--white);
+    color: var(--blue);
 }
 /* Make Comment Box */
 
@@ -2160,6 +2194,68 @@ p{
     position:absolute;
     right:-16px;
     bottom:-16px;
+}
+.choose--club-icon.dropdown-toggle::after{
+    display: none;
+    position: relative;
+}
+.choose--club-icon-wrapper .dropdown-menu{
+    border: 0;
+    background: var(--white);
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    border-radius: 16px;
+    padding: 20px 8px 20px 20px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    transform: translate(0px, 128px)!important;
+}
+.all--emoji-wrapper{
+    max-height: 290px;
+    overflow: hidden scroll;
+}
+
+
+.all--emoji-wrapper::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.all--emoji-wrapper::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.all--emoji-wrapper::-webkit-scrollbar-thumb
+{
+	background: #1F1F1F;
+    border-radius: 4px;
+}
+
+
+.emoji-group h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.emoji--list{
+    display: inline-flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.emoji--list .emoji--item{
+    max-width: calc(20% - 16px);
+    flex-basis: calc(100% - 16px);
+    margin-right: 16px;
+    margin-bottom: 16px;
 }
 .edit--club-name,
 .edit--club-description{
