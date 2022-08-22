@@ -371,6 +371,63 @@
         left: 46px;
         transform: unset;
     }
+
+
+    /* ================================================== */
+
+    /*  Settings Page CSS	*/
+
+    /* ================================================== */
+
+    .settings--content-wrapper{
+        max-width:100%;
+        flex-wrap: wrap;
+    }
+    .settings--tab-buttons{
+        max-width:100%;
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .settings--tab-contens{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .account--details--wrapper{
+        flex-wrap: wrap;
+    }
+    .account--content--wrapper {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .account--content{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .upload--photo-modal .modal-header,
+    .upload--photo-modal .modal-footer{
+        padding: 16px;
+    }
+    .upload--photo-modal .modal-body{
+        padding:16px;
+    }
+    .account--preview--wrapper{
+        max-width:100%;
+        flex-basis: 100%;
+    }
+    .account--preview{
+        padding: 16px;
+    }
+    .notification--switch label span{
+        width: 64px;
+    }
+    .notification--switch label::after{
+        width: 64px;
+    }
+    .notification--switch input + label::after {
+        transform: translateX(68px);
+    }
+
 }
 
 @media (min-width:768px) and (max-width:991px){
