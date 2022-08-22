@@ -428,6 +428,41 @@
         transform: translateX(68px);
     }
 
+
+    /* ================================================== */
+
+    /*  Budget Golas Page CSS	*/
+
+    /* ================================================== */
+
+    .budget--goals-page-content-wrapper{
+        max-width:100%;
+        flex-wrap: wrap;
+    }
+    .budget--activity-tabs .nav-tabs li button{
+        width:102px;
+        font-size: 12px;
+    }
+
+    .send--fund-profile-img{
+        width:20%;
+        margin-right: 16px;
+        height: fit-content;
+    }
+    .single--budget-activity-text{
+        width: 78%;
+    }
+    .send--fund-profile-img .plus--img, 
+    .send--fund-profile-img .send--fund-img{
+        bottom: -10px;
+        right: -10px;
+    }
+    #budget--activity-tabs-content .budget--goals-wrapper, .officers-budget--goals-wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -719,6 +754,17 @@
         padding: 16px;
     }
 
+    /* ================================================== */
+
+    /*  Budget Golas Page CSS	*/
+
+    /* ================================================== */
+
+    .budget--goals-page-content-wrapper{
+        max-width:100%;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -870,6 +916,33 @@
         max-width:100%;
     }
 
+
+    /* ================================================== */
+
+    /*  Budget Golas Page CSS	*/
+
+    /* ================================================== */
+
+    .budget--goals-page-content-wrapper{
+        max-width:100%;
+        flex-wrap: wrap;
+    }
+
+    .send--fund-profile-img{
+        width:13%;
+        margin-right: 16px;
+        height: fit-content;
+    }
+    .single--budget-activity-text{
+        width: 85%;
+    }
+    .send--fund-profile-img .plus--img, 
+    .send--fund-profile-img .send--fund-img{
+        bottom: -10px;
+        right: -10px;
+    }
+    
+
 }
 
 @media (min-width:1200px) and (max-width:1399px){
@@ -992,6 +1065,16 @@
         max-width:100%;
     }
 
+    /* ================================================== */
+
+    /*  Budget Golas Page CSS	*/
+
+    /* ================================================== */
+
+    .budget--goals-page-content-wrapper{
+        max-width:100%;
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width:1400px) and (max-width:1599px){
