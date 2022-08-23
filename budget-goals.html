@@ -714,6 +714,239 @@
 
 
 
+    <!-- Create Deposit Modal -->
+
+
+    <div class="modal fade create--deposit-modal" id="createDeposit" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Create Deposit</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="choose--club-select">
+                        <label>Choose Club</label>
+                        <div class="custom--selector">
+                            <div class="custom--selector-wrapper">
+                                <div class="select--field">
+                                    <div class="select--text">Choose CLub</div>
+                                </div>
+                            </div>
+                            <ul class="list hide list--items">
+                                <li class="list--item">
+                                    <img src="./img/your--club-avatar-1.png" alt="">
+                                    <p>Cat Lover Club</p>
+                                </li>
+                                <li  class="list--item">
+                                    <img src="./img/your--club-avatar-2.png" alt="">
+                                    <p>Business Club</p>
+                                </li>
+                                <li  class="list--item">
+                                    <img src="./img/your--club-avatar-3.png" alt="">
+                                    <p>Music RnB Club</p>
+                                </li>
+                                <li  class="list--item">
+                                    <img src="./img/your--club-avatar-4.png" alt="">
+                                    <p>Riders Club</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/your--club-avatar-1.png" alt="">
+                                    <p>Cat Lover Club</p>
+                                </li>
+                                <li  class="list--item">
+                                    <img src="./img/your--club-avatar-2.png" alt="">
+                                    <p>Business Club</p>
+                                </li>
+                                <li  class="list--item">
+                                    <img src="./img/your--club-avatar-3.png" alt="">
+                                    <p>Music RnB Club</p>
+                                </li>
+                                <li  class="list--item">
+                                    <img src="./img/your--club-avatar-4.png" alt="">
+                                    <p>Riders Club</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="choose--officer-select">
+                        <label>Choose Officer</label>
+                        <div class="custom--selector">
+                            <div class="custom--selector-wrapper">
+                                <div class="select--field">
+                                    <div class="select--text">Choose Officer</div>
+                                </div>
+                            </div>
+                            <ul class="list hide list--items">
+                                <li class="list--item">
+                                    <img src="./img/profile--img-1.png" alt="">
+                                    <p>Amrith</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-2.png" alt="">
+                                    <p>Jacob</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-3.png" alt="">
+                                    <p>Bodhi</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-1.png" alt="">
+                                    <p>Amrith</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-2.png" alt="">
+                                    <p>Jacob</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-3.png" alt="">
+                                    <p>Bodhi</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="add--to-goal-select">
+                        <div class="add--to-goal-wrapper">
+                            <h2>add to goles</h2>
+                            <div class="add--to-goal" id="add-to-goal">
+                                <span>Yes</span>
+                                <input class="show-public-toogler show-public-toogler-light" id="addToGoalToggler" type="checkbox">
+                                <label class="show-public-toogler-btn" for="addToGoalToggler"></label>
+                            </div>
+                        </div>
+                        <div class="custom--selector">
+                            <div class="custom--selector-wrapper">
+                                <div class="select--field">
+                                    <div class="select--text">Choose goal</div>
+                                </div>
+                            </div>
+                            <ul class="list hide list--items">
+                                <li class="list--item">
+                                    <img src="./img/budget-goals-avater-1.png" alt="">
+                                    <p>First Target Goal</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/budget-goals-avater-2.png" alt="">
+                                    <p>Second Target Goal</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/budget-goals-avater-3.png" alt="">
+                                    <p>Third Target Goal</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/budget-goals-avater-1.png" alt="">
+                                    <p>First Target Goal</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/budget-goals-avater-2.png" alt="">
+                                    <p>Second Target Goal</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/budget-goals-avater-3.png" alt="">
+                                    <p>Third Target Goal</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="deposit--amount">
+                        <label for="desposit-amount">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" placeholder="5" id="desposit-amount" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="deposit--note">
+                        <label for="deposit-note">Club Description</label>
+                        <textarea class="form-control" name="deposit-note" id="deposit-note" placeholder="A house for cat lover all over the world. Download thousands of free &amp; premium web design, illustration, bootstrap template, flutter app, icon, 3d illustration, and graphic assets for your UI, UX design project" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn club--settings-save">Create</button>
+                    <button type="button" class="btn club--settings-cancel" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Create Deposit Modal -->
+
+    <!-- Create Deposit Modal -->
+
+
+    <div class="modal fade send--funds-modal" id="sendFunds" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Send Funds</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="choose--officer-select">
+                        <label>Choose Officer</label>
+                        <div class="custom--selector">
+                            <div class="custom--selector-wrapper">
+                                <div class="select--field">
+                                    <div class="select--text">Choose Officer</div>
+                                </div>
+                            </div>
+                            <ul class="list hide list--items">
+                                <li class="list--item">
+                                    <img src="./img/profile--img-1.png" alt="">
+                                    <p>Amrith</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-2.png" alt="">
+                                    <p>Jacob</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-3.png" alt="">
+                                    <p>Bodhi</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-1.png" alt="">
+                                    <p>Amrith</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-2.png" alt="">
+                                    <p>Jacob</p>
+                                </li>
+                                <li class="list--item">
+                                    <img src="./img/profile--img-3.png" alt="">
+                                    <p>Bodhi</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="deposit--amount">
+                        <label for="desposit-amount">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" placeholder="5" id="desposit-amount" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="deposit--note">
+                        <label for="deposit-note">Club Description</label>
+                        <textarea class="form-control" name="deposit-note" id="deposit-note" placeholder="A house for cat lover all over the world. Download thousands of free &amp; premium web design, illustration, bootstrap template, flutter app, icon, 3d illustration, and graphic assets for your UI, UX design project" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn club--settings-save">Send</button>
+                    <button type="button" class="btn club--settings-cancel" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Create Deposit Modal -->
+
+
+
 
 
 

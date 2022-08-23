@@ -67,7 +67,8 @@ p{
     opacity: 0;
     backdrop-filter: blur(0px);
 }
-.modal-open{
+.modal-open,
+.modal.show{
     padding-right: 0!important;
 }
 /* ================================================== */
@@ -3348,7 +3349,7 @@ p{
     align-items: center;
     font-family: 'Lato',sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -3496,3 +3497,270 @@ p{
     padding: 30px;
     justify-content:flex-start;
 }
+
+
+/* Create Deposit Modal */
+
+.create--deposit-modal .modal-content,
+.send--funds-modal .modal-content{
+    border: 0;
+    padding: 30px;
+}
+.create--deposit-modal .modal-content .modal-header,
+.send--funds-modal .modal-content .modal-header{
+    padding:0;
+    border-bottom: 1px solid var(--gray-4);
+}
+.create--deposit-modal .modal-content .modal-header h2,
+.send--funds-modal .modal-content .modal-header h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+}
+.create--deposit-modal .modal-content .modal-footer,
+.send--funds-modal .modal-content .modal-footer{
+    border: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+.create--deposit-modal .modal-body,
+.send--funds-modal .modal-body{
+    padding: 32px 0 0 0;
+}
+.deposit--amount{
+    margin-bottom: 16px;
+}
+.deposit--amount .input-group{
+    background: var(--white);
+    border: 1px solid #ECECF2;
+    border-radius: 8px;
+    padding: 6px 0;
+}
+.deposit--amount .input-group-text{
+    background: transparent;
+    border: 0;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #858EAD;
+}
+.deposit--amount input{
+    border: 0;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C1D21;
+    padding-left: 0;
+    box-shadow:none;
+}
+.deposit--amount input:focus{
+    box-shadow:none;
+}
+
+.deposit--note{
+    margin-bottom: 16px;
+}
+.choose--club-select label,
+.choose--officer-select label,
+.deposit--amount label,
+.deposit--note label{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.deposit--note textarea{
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    background: var(--secondary-6);
+    border-radius: 8px;
+    width: 100%;
+    padding: 13px 20px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-black);
+    resize: none;
+    height: 140px;
+}
+.deposit--note textarea:focus{
+    background: var(--secondary-6);
+    color: var(--secondary-black);
+    box-shadow:none;
+}
+.add--to-goal-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.add--to-goal-wrapper h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    padding-right: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.add--to-goal{
+    display:flex;
+    align-items: center;
+}
+.add--to-goal span{
+    padding-right: 6px;
+}
+.add--to-goal.active span{
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Selector CSS */
+
+
+.select_wrapper {
+    margin-bottom: 20px;
+}
+.select_wrapper label {
+    margin-left: 50px;
+}
+.select_wrapper label span {
+    color: red;
+}
+.d_flex {
+    display: flex;
+    align-items: center;
+}
+.d_flex img {
+    width: 30px;
+}
+.custom--selector {
+    width: 100%;
+    position: relative; 
+    margin-bottom: 16px;
+}
+.custom--selector_wrapper {
+    display: flex;
+    align-items: center;
+}
+.select--field {
+    background:var(--white);
+    border: 1px solid #ECECF2;
+    border-radius: 8px;    
+    width: 100%;
+    height: 43px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+}
+.select--field::after{
+    position: absolute;
+    content: "";
+    border-color: #858EAD transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    right: 12px;
+    margin-left: -4px;
+    margin-top: -2px;
+    top: 50%;
+    width: 0;
+}
+.select--text {
+    margin: 0;
+    line-height: 36px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.select--text  img{
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+}
+
+.list {
+    width: 100%;
+    background-color: var(--white);
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #ECECF2;
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 99;
+    list-style-type: none;
+}
+
+.list::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.list::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.list::-webkit-scrollbar-thumb
+{
+	background: #1F1F1F;
+    border-radius: 4px;
+}
+
+ul:not(.list-unstyled) li.list--item:before{
+    background-color: transparent;
+}
+.list--item:hover {
+    background: var(--gradient);
+    color: #fff;
+}
+.list--item {
+    list-style-type: none;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+.list--item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.hide {
+    display: none;
+}
+
+
+/* Note */
