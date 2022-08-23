@@ -3501,16 +3501,19 @@ p{
 
 /* Create Deposit Modal */
 
+.create--goal-modal .modal-content,
 .create--deposit-modal .modal-content,
 .send--funds-modal .modal-content{
     border: 0;
     padding: 30px;
 }
+.create--goal-modal .modal-content .modal-header,
 .create--deposit-modal .modal-content .modal-header,
 .send--funds-modal .modal-content .modal-header{
     padding:0;
     border-bottom: 1px solid var(--gray-4);
 }
+.create--goal-modal .modal-content .modal-header h2,
 .create--deposit-modal .modal-content .modal-header h2,
 .send--funds-modal .modal-content .modal-header h2{
     font-family: 'Source Sans Pro',sans-serif;
@@ -3523,12 +3526,14 @@ p{
     padding-bottom: 16px;
     margin-bottom: 0px;
 }
+.create--goal-modal .modal-content .modal-footer,
 .create--deposit-modal .modal-content .modal-footer,
 .send--funds-modal .modal-content .modal-footer{
     border: 0;
     padding: 0;
     justify-content: flex-start;
 }
+.create--goal-modal .modal-body,
 .create--deposit-modal .modal-body,
 .send--funds-modal .modal-body{
     padding: 32px 0 0 0;
@@ -3570,6 +3575,7 @@ p{
 .deposit--note{
     margin-bottom: 16px;
 }
+.date--select label,
 .choose--club-select label,
 .choose--officer-select label,
 .deposit--amount label,
@@ -3581,6 +3587,18 @@ p{
     line-height: 26px;
     color: var(--secondary-color);
     margin-bottom: 10px;
+}
+.date--select input{
+    background: var(--white);
+    border: 1px solid #ECECF2;
+    border-radius: 8px;
+    padding: 6px 12px;
+    box-shadow:none;
+    height: 43px;
+}
+.date--select input:focus{
+    box-shadow:none;
+    border: 1px solid #ECECF2;
 }
 .deposit--note textarea{
     border: 0;
@@ -3634,25 +3652,30 @@ p{
     -webkit-text-fill-color: transparent;
 }
 
+.amount--date-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.amount--date-wrapper .deposit--amount{
+    width: 100%;
+    max-width:49%;
+    flex-basis: 49%;
+    margin-right: 2%;
+}
+.amount--date-wrapper .date--select{
+    width: 100%;
+    max-width:49%;
+    flex-basis: 49%;
+}
+
+.create--goal-modal .club--icon-modal{
+    text-align:left;
+}
+
+
 /* Custom Selector CSS */
 
 
-.select_wrapper {
-    margin-bottom: 20px;
-}
-.select_wrapper label {
-    margin-left: 50px;
-}
-.select_wrapper label span {
-    color: red;
-}
-.d_flex {
-    display: flex;
-    align-items: center;
-}
-.d_flex img {
-    width: 30px;
-}
 .custom--selector {
     width: 100%;
     position: relative; 
