@@ -1039,11 +1039,8 @@
         flex-basis: 25%;
         margin-top: 16px;
     }
-    .budget--goals-header{
-        flex-wrap: wrap;
-    }
-    .show--public{
-        margin-top: 16px;
+    .budget--goals-header h2{
+        width: fit-content;
     }
 
       /* ================================================== */
