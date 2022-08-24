@@ -359,7 +359,25 @@
                             </div>
 
                         </div>
-                        <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="statistics-tab-pane" role="tabpanel" aria-labelledby="statistics-tab" tabindex="0">
+
+                            <div class="chart--title-wrapper">
+                                <div class="chart--title">
+                                    <h2>Total balance <span>( Dollar )</span> </h2>
+                                </div>
+                                <div class="chart--filter">
+                                    <select name="" id="">
+                                        <option value="1 week">1 week</option>
+                                        <option value="2 week">2 week</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="my--chart-wrapper">
+                                <canvas id="myChart"></canvas>
+                            </div>
+
+
+                        </div>
                         <div class="tab-pane fade" id="goals-tab-pane" role="tabpanel" aria-labelledby="goals-tab" tabindex="0">
 
                             <!-- Budget Golas -->
@@ -717,7 +735,7 @@
     <!-- Create Deposit Modal -->
 
 
-    <div class="modal fade create--deposit-modal" id="createDeposit" data-bs-backdrop="static">
+    <div class="modal fade create--deposit-modal" id="createDeposit">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1214,6 +1232,61 @@
     <!-- Script Files -->
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/script.js"></script>
+
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext("2d");
+
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, 'rgba(0, 112, 178, 1)');
+        gradientStroke.addColorStop(1, 'rgba(0, 112, 178, 1)');
+
+        var gradientFill = ctx.createLinearGradient(0, 0, 00, 500);
+        gradientFill.addColorStop(0, "rgba(0, 112, 178, 0.6)");
+        gradientFill.addColorStop(1, "rgba(0, 112, 178, 0)");
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Feb 28", "Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6"],
+                datasets: [{
+                    label: "Budget Goals Statistics",
+                    borderColor: gradientStroke,
+                    pointBorderColor: gradientStroke,
+                    pointBackgroundColor: gradientStroke,
+                    pointHoverBackgroundColor: gradientStroke,
+                    pointHoverBorderColor: gradientStroke,
+                    pointBorderWidth: 12,
+                    pointHoverRadius: 10,
+                    pointHoverBorderWidth: 1,
+                    pointRadius: 0,
+                    fill: true,
+                    lineTension: 0.2,
+                    backgroundColor: gradientFill,
+                    borderWidth: 4,
+                    data: [6000, 7500, 5000, 12000, 5000, 7000, 10000]
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 12500,
+                        ticks: {
+                            stepSize: 2500    
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>

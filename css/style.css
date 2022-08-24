@@ -71,6 +71,7 @@ p{
 .modal.show{
     padding-right: 0!important;
 }
+
 /* ================================================== */
 
 /*  Page - Login CSS	*/
@@ -3672,8 +3673,54 @@ p{
     text-align:left;
 }
 
+.chart--title-wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.chart--title h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 8px;
+}
+.chart--filter select{
+    width: 117px;
+    height: 42px;
+    background: var(--gray-2);
+    border: 0;
+    border-radius: 8px;
+    padding:10px 12px;
+}
+.chart--filter select:focus{
+    border: 0;
+    outline: 0;
+}
+.chart--filter select option{
+    font-family: 'Manrope',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1A202C;
+}
 
-/* Custom Selector CSS */
+
+
+
+
+
+/* ================================================== */
+
+/*  Custom Selector CSS	Start */
+
+/* ================================================== */
 
 
 .custom--selector {
@@ -3786,4 +3833,8 @@ ul:not(.list-unstyled) li.list--item:before{
 }
 
 
-/* Note */
+/* ================================================== */
+
+/*  Custom Selector CSS end	*/
+
+/* ================================================== */

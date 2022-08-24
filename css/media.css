@@ -457,11 +457,22 @@
         bottom: -10px;
         right: -10px;
     }
-    #budget--activity-tabs-content .budget--goals-wrapper, .officers-budget--goals-wrapper{
+    #budget--activity-tabs-content .budget--goals-wrapper{
         padding-left: 0;
         padding-right: 0;
     }
+    .chart--title h2 span{
+        display: none;
+    }
 
+    .chart--title-wrapper{
+        padding: 16px 0;
+    }
+    .create--goal-modal .modal-content, 
+    .create--deposit-modal .modal-content, 
+    .send--funds-modal .modal-content{
+        padding: 16px;
+    }
 
 }
 
