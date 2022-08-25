@@ -17,6 +17,7 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 :root{
     --white:#ffffff;
     --black:#000000;
@@ -980,6 +981,26 @@ p{
 }
 .modal--member-list {
     height:430px;
+    overflow: hidden scroll;
+    padding-right: 12px;
+}
+
+.modal--member-list::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.modal--member-list::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.modal--member-list::-webkit-scrollbar-thumb
+{
+	background: #1F1F1F;
+    border-radius: 4px;
 }
 
 .modal--officers-list{
@@ -1066,23 +1087,31 @@ p{
 .modal--members-list-options .dropdown .dropdown-menu{
     padding:20px 16px;
     min-width: 242px;
+    min-height: 190px;
     border:0;
-    transform: unset!important;
-    box-shadow: 0 16px 100px -20px #97989d;
-    left: -196px!important;
-    top: 40px!important;
+    box-shadow: 0 16px 100px -20px rgba(151, 152, 157, 0.6);
+    background: #ffffff;
 }
 .modal--officers-list-options .dropdown .dropdown-menu::after,
 .modal--members-list-options .dropdown .dropdown-menu::after{
     position: absolute;
-    top: -10px;
-    right: 11%;
-    margin-left: -10px;
+    /* top: -10px; */
+    right: 2%;
+    /* margin-left: -10px; */
     content: "";
     display: block;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid var(--white);
+}
+.modal--officers-list-options .dropdown .dropdown-menu[data-popper-placement="bottom-end"]::after,
+.modal--members-list-options .dropdown .dropdown-menu[data-popper-placement="bottom-end"]::after{
+    top: -10px;
+}
+.modal--officers-list-options .dropdown .dropdown-menu[data-popper-placement="top-end"]::after,
+.modal--members-list-options .dropdown .dropdown-menu[data-popper-placement="top-end"]::after{
+    bottom: -10px;
+    transform: rotate(-180deg);
 }
 .modal--officers-list-options .dropdown .dropdown-menu li:not(:last-child),
 .modal--members-list-options .dropdown .dropdown-menu li:not(:last-child){
@@ -1239,6 +1268,31 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
+.budget--goals-list{
+    padding-right: 12px;
+    overflow: hidden scroll;
+    max-height:320px;
+}
+
+.budget--goals-list::-webkit-scrollbar-track
+{
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+.budget--goals-list::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.budget--goals-list::-webkit-scrollbar-thumb
+{
+	background: #1F1F1F;
+    border-radius: 4px;
+}
+
+
 .show--public{
     display: flex;
     align-items: center;
@@ -1400,20 +1454,24 @@ p{
     background: var(--white);
     border-radius: 6px;
     box-shadow: 0 16px 100px -20px #97989d;
-    transform: unset!important;
-    top: 40px!important;
-    left: -80px!important;
+    min-height: 90px;
 }
 .edit--budget--goals .dropdown-menu::after{
     position: absolute;
-    top: -10px;
-    right:33%;
+    right:2%;
     margin-left: -10px;
     content:"";
     display:block;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid var(--white); 
+}
+.edit--budget--goals .dropdown-menu[data-popper-placement="bottom-end"]::after{
+    top: -10px;
+}
+.edit--budget--goals .dropdown-menu[data-popper-placement="top-end"]::after{
+    bottom: -10px;
+    transform:rotate(-180deg);
 }
 .edit--budget--goals .dropdown-menu .edit--goal{
     margin-bottom: 12px;
@@ -3242,6 +3300,9 @@ p{
     font-size: 16px;
     line-height: 24px;
     color: var(--red);
+    box-shadow: 0 16px 100px -20px #97989d;
+}
+.delete--your-message:active:focus{
     box-shadow: 0 16px 100px -20px #97989d;
 }
 .delete--your-message img{
