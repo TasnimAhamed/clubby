@@ -3233,6 +3233,9 @@ p{
 .member--profile-img{
     margin-right: 20px;
 }
+.member--profile-img img{
+    cursor:pointer;
+}
 .my--profile-img{
     margin-left: 20px;
 }
@@ -3343,12 +3346,119 @@ p{
     text-align: right;
 }
 
+.member--profile-img{
+    position: relative;
+}
+
+.member--profile-img .dropdown-menu{
+    transform: unset!important;
+    top: -10px!important;
+    left: 64px!important;
+    width: 100%;
+    min-width:396px;
+    max-width:396px;
+    padding: 24px;
+    border:0;
+    box-shadow: 0px 12px 16px 1px rgb(16 24 40 / 8%), 0px 4px 6px 1px rgb(16 24 40 / 3%);
+}
+.member--profile-img .dropdown-menu::after{
+    position: absolute;
+    top: 26px;
+    left: 0;
+    margin-left: -22px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--white);
+    transform: rotate(-90deg);
+}
+
+.profile--details-dropdown h2{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--gray-4);
+    margin: 0;
+    padding-bottom: 16px;
+}
+.profile--view{
+    width: 100%;
+    height: 176px;
+    background: #FFECE6;
+    border-radius: 10px;
+    text-align:center;
+    padding: 13px;
+    margin: 16px 0;
+}
+.profile--view img{
+    width:80px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+.profile--view h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #192126;
+    margin: 0;
+}
+.profile--view p{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--secondary-3);
+}
+.mutual--club-list h3{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.mutual--club-list .mutual--club-list-item:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.mutual--club-list-item{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+.mutual--club-list-item-img{
+    margin-right: 6px;
+}
+.mutual--club-list-item-img img{
+    width:32px;
+    height:32px;
+}
+.mutual--club-list-item-text p{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--secondary-color);
+}
 
 /* ================================================== */
 
 /*  Budget Goals CSS	*/
 
 /* ================================================== */
+
+
 .budget--goals-page-content-wrapper{
     width: 100%;
     max-width:84%;

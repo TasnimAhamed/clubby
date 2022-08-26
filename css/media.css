@@ -373,6 +373,22 @@
     }
 
 
+    .member--profile-img .dropdown-menu{
+        top: 48px!important;
+        left: -12px!important;
+        width: 100%;
+        min-width: 328px;
+        max-width: 328px;
+        padding: 16px;
+        box-shadow: 0px 12px 16px 16px rgb(16 24 40 / 8%), 0px 4px 6px 6px rgb(16 24 40 / 3%);
+    }
+
+    .member--profile-img .dropdown-menu::after{
+        top: -15px;
+        left: 35px;
+        transform: unset;
+    }
+
     /* ================================================== */
 
     /*  Settings Page CSS	*/
